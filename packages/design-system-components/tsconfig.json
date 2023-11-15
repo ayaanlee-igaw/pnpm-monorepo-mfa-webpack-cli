@@ -1,16 +1,6 @@
 {
+  "extends": "../../configs/tsconfig/tsconfig.vue.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": true,
-    "sourceMap": true,
     "baseUrl": ".",
     "types": [
       "webpack-env",

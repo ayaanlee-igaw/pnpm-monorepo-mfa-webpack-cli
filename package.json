@@ -3,6 +3,7 @@
   "scripts": {
     "build": "pnpm --parallel --filter \"./**\" build",
     "serve": "pnpm --parallel --filter \"./**\" serve",
+    "lint": "pnpm --parallel --filter \"./**\" lint",
     "lint:fix": "pnpm --parallel --filter \"./**\" lint:fix"
   },
   "devDependencies": {

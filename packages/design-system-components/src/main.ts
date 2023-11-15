@@ -4,7 +4,7 @@ import '@monorepo/element-plus-design-system/src/styles/styles.scss';
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import ElementPlus from 'element-plus';
-import { router } from './router';
+import router from './router';
 
 import App from './App.vue';
 

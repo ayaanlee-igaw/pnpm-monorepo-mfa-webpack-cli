@@ -18,5 +18,4 @@ const router = createRouter({
   routes,
 });
 
-// eslint-disable-next-line import/prefer-default-export
-export { router };
+export default router;
