@@ -1,0 +1,51 @@
+$--index-blind: -1;
+$--index-default: 0;
+$--index-normal: 1;
+
+$--index-inline-popover: 16100000;
+$--index-floating: 16200000;
+$--index-full-screen: 16250000;
+$--index-dialog: 16300000;
+$--index-popover: 16400000;
+$--index-toast: 16600000;
+$--index-super: 16700000;
+$--index-skip: 16777271;
+
+@mixin layer-index($layer: 'default', $index: 0) {
+  $default-index: $--index-default;
+
+  @if ($index < 0) or ($index > 99999) {
+    @error '$index should be 0 to 99999';
+  }
+
+  @if $layer == 'blind' {
+    $default-index: $--index-blind;
+    $index: 0;
+  } @else if $layer == 'inline-popover' {
+    $default-index: $--index-inline-popover;
+  } @else if $layer == 'floating' {
+    $default-index: $--index-floating;
+  } @else if $layer == 'full-screen' {
+    $default-index: $--index-full-screen;
+  } @else if $layer == 'dialog' {
+    $default-index: $--index-dialog;
+  } @else if $layer == 'popover' {
+    $default-index: $--index-popover;
+  } @else if $layer == 'toast' {
+    $default-index: $--index-toast;
+  } @else if $layer == 'super' {
+    $default-index: $--index-super;
+  } @else if $layer == 'skip' {
+    $default-index: $--index-skip;
+    $index: 0;
+  }
+
+  z-index: $default-index + $index !important;
+}
+
+
+
+
+@import 'design-system/design-system-style';
+@import 'element-ui/components';
+@import 'font';

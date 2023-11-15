@@ -19,6 +19,9 @@ module.exports = defineConfig({
           vue: {
             singleton: true,
           },
+          'element-plus': {
+            singleton: true,
+          },
         },
       }),
     ],

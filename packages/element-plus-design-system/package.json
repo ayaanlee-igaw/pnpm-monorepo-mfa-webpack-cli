@@ -1,0 +1,7 @@
+{
+  "name": "@monorepo/element-plus-design-system",
+  "version": "0.1.0",
+  "devDependencies": {
+    "sass": "^1.32.7"
+  }
+}

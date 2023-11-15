@@ -13,7 +13,9 @@
     "core-js": "^3.8.3",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
-    "pinia": "^2.1.7"
+    "pinia": "^2.1.7",
+    "element-plus": "^2.4.1",
+    "@monorepo/element-plus-design-system": "workspace:*"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",

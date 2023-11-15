@@ -14,5 +14,6 @@ module.exports = {
     'import/no-unresolved': [2, { ignore: ['^service/.*$'] }],
     'linebreak-style': 0,
     '@typescript-eslint/ban-ts-comment': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };

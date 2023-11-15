@@ -1,3 +1,4 @@
 packages:
   - 'packages/container'
   - 'packages/service'
+  - 'packages/element-plus-design-system'
