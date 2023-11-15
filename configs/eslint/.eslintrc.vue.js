@@ -15,5 +15,7 @@ module.exports = {
     'linebreak-style': 0,
     '@typescript-eslint/ban-ts-comment': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'vuejs-accessibility/form-control-has-label': 'off',
+    'max-len': 'off',
   },
 };

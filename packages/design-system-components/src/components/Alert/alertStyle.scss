@@ -1,0 +1,88 @@
+// alert color mixin
+@mixin alert-color($bg, $color, $border) {
+  background-color: $bg;
+  border-left: $border;
+  .alert-icon-wrap {
+    color: $color;
+  }
+}
+
+.alert-wrap {
+  padding: var(--comp-alert-spacing-vertical) var(--comp-alert-spacing-horizontal);
+  border-radius: var(--comp-alert-border-radius-default);
+
+  // center
+  &.center {
+    justify-content: center;
+  }
+
+  // description button
+  &.is-description-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .alert {
+    display: flex;
+    gap: var(--comp-alert-spacing-gap);
+
+    // icon
+    .alert-icon-wrap {
+      width: var(--comp-alert-sizing-icon-prefix-2line);
+      height: var(--comp-alert-sizing-icon-prefix-2line);
+      font-size: var(--comp-alert-sizing-icon-prefix-2line);
+      line-height: 1;
+    }
+
+    // contents
+    .alert-contents-wrap {
+      .alert-contents {
+        display: flex;
+        flex-direction: column;
+        gap: var(--comp-alert-spacing-gap-text);
+        font: var(--comp-alert-typography-text);
+        color: var(--comp-alert-color-text-description);
+        .alert-contents-title {
+          margin-top: -2px;
+          font: var(--comp-alert-typography-title);
+          color: var(--comp-alert-typography-title);
+          vertical-align: top;
+        }
+      }
+      .el-button {
+        margin-top: var(--comp-alert-spacing-gap-content);
+      }
+    }
+  }
+
+  &.success {
+    @include alert-color(
+    var(--comp-alert-color-background-success),
+    var(--comp-alert-color-icon-success),
+    var(--comp-alert-border-success)
+    );
+  }
+  &.warning {
+    @include alert-color(
+    var(--comp-alert-color-background-warning),
+    var(--comp-alert-color-icon-warning),
+    var(--comp-alert-border-warning)
+    );
+  }
+  &.info {
+    @include alert-color(
+    var(--comp-alert-color-background-infomation),
+    var(--comp-alert-color-icon-info),
+    var(--comp-alert-border-info)
+    );
+  }
+  &.danger {
+    @include alert-color(
+    var(--comp-alert-color-background-error),
+    var(--comp-alert-color-icon-error),
+    var(--comp-alert-border-error)
+    );
+  }
+}
