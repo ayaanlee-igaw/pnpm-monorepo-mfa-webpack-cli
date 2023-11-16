@@ -16,7 +16,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'home',
     component: HomeView,
   },
-  ...designSystemComponentsRouter,
+  ...designSystemComponentsRouter.getRoutes(),
 ];
 
 const router = createRouter({
