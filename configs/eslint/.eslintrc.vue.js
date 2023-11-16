@@ -1,14 +1,22 @@
 module.exports = {
   extends: [
     './.eslintrc.common.js',
-    'plugin:vue/vue3-essential',
-    '@vue/typescript/recommended'
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+    // "plugin:prettier/recommended",
+    "plugin:vue/vue3-recommended",
   ],
   rules: {
-    '@typescript-eslint/ban-ts-comment': 'off',
-    'import/no-extraneous-dependencies': 'off',
     'vuejs-accessibility/form-control-has-label': 'off',
     'vue/multi-word-component-names': 'off',
-    'max-len': 'off',
+    // 닫는 브래킷 개행 여부
+    'vue/html-closing-bracket-newline': ['error', {
+      singleline: 'never',
+      multiline: 'never',
+    }],
+    // ts ignore 사용 여부
+    // '@typescript-eslint/ban-ts-comment': 'off',
+    // import 외부 의존성 허용 여부
+    // 'import/no-extraneous-dependencies': 'off',
   },
 };

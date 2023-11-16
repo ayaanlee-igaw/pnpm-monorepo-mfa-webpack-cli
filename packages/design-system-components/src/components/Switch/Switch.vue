@@ -3,7 +3,9 @@
 
   <div>
     <el-switch v-model="value1" />
-    <el-switch v-model="value1" disabled/>
+    <el-switch
+      v-model="value1"
+      disabled />
   </div>
 </template>
 

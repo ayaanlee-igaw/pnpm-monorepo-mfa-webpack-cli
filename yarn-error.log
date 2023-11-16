@@ -1,0 +1,45 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add eslint-plugin-postcss-modules --dev
+
+PATH: 
+  C:\Users\ayaanlee\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\ayaanlee\cmder\vendor\conemu-maximus5;C:\Users\ayaanlee\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\ayaanlee\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\nodejs\;C:\Python27;C:\Program Files\Bandizip\;C:\Users\ayaanlee\php7.4.33;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\ayaanlee\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\WebStorm 2022.3.2\bin;C:\Program Files\JetBrains\JetBrains Rider 2022.3.2\bin;C:\Users\ayaanlee\AppData\Local\gitkraken\bin;C:\Users\ayaanlee\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\ayaanlee\AppData\Roaming\npm;C:\Users\ayaanlee\.dotnet\tools;C:\Users\ayaanlee\projects\monorepo-webpack\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ayaanlee\cmder\vendor\bin;C:\Users\ayaanlee\cmder
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\ayaanlee\AppData\Local\Yarn\Cache\v6\npm-ms-2.1.3-574c8138ce1d2b5861f0b44579dbadd60c6615b2-integrity\node_modules\ms\index.js' -> 'C:\Users\ayaanlee\projects\monorepo-webpack\node_modules\eslint-import-resolver-node\node_modules\ms\index.js'
+
+npm manifest: 
+  {
+    "name": "monorepo",
+    "scripts": {
+      "build": "pnpm --parallel --filter \"./**\" build",
+      "build:token": "pnpm --parallel --filter \"@monorepo/design-system\" build:token",
+      "serve": "pnpm --parallel --filter \"./**\" serve",
+      "lint": "pnpm --parallel --filter \"./**\" lint",
+      "lint:fix": "pnpm --parallel --filter \"./**\" lint:fix"
+    },
+    "devDependencies": {
+      "@typescript-eslint/eslint-plugin": "^5.4.0",
+      "@typescript-eslint/parser": "^5.4.0",
+      "@vue/cli-plugin-eslint": "5.0.8",
+      "@vue/eslint-config-typescript": "11.0.3",
+      "eslint": "8.53.0",
+      "eslint-plugin-import": "2.29.0",
+      "eslint-plugin-vue": "9.16.0",
+      "eslint-plugin-vuejs-accessibility": "1.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

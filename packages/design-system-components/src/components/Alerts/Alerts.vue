@@ -3,15 +3,36 @@
 
   <div class="alert-wrap">
     <Alert :type="AlertType.success">
-      <template v-slot:default>
+      <template #default>
         <div>slot binding</div>
       </template>
     </Alert>
-    <Alert :type="AlertType.warning" title="Warning" buttonLabel="Button" :handleButton="handleButton" description="title, button, center" center />
-    <Alert :type="AlertType.warning" buttonLabel="Button" :handleButton="handleButton" description="button and center" center />
-    <Alert :type="AlertType.info" title="Info" description="title and center" center/>
-    <Alert :type="AlertType.danger" description="danger" center />
-    <Alert :type="AlertType.danger" title="danger" center />
+    <Alert
+      :type="AlertType.warning"
+      title="Warning"
+      button-label="Button"
+      :handle-button="handleButton"
+      description="title, button, center"
+      center />
+    <Alert
+      :type="AlertType.warning"
+      button-label="Button"
+      :handle-button="handleButton"
+      description="button and center"
+      center />
+    <Alert
+      :type="AlertType.info"
+      title="Info"
+      description="title and center"
+      center />
+    <Alert
+      :type="AlertType.danger"
+      description="danger"
+      center />
+    <Alert
+      :type="AlertType.danger"
+      title="danger"
+      center />
   </div>
 </template>
 

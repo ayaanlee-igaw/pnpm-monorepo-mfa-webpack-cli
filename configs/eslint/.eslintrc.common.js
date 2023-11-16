@@ -14,4 +14,15 @@ module.exports = {
     // window | mac 환경 고려
     'linebreak-style': 0,
   },
+  overrides: [
+    {
+      files: [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/unit/**/*.spec.{j,t}s?(x)",
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ]
 };

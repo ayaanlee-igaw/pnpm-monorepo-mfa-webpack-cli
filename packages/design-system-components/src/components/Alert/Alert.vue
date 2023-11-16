@@ -2,13 +2,19 @@
   <div :class="['alert-wrap', props.type, { 'center': isCenter }, { 'is-description-button': isShowDescriptionButton }]">
     <div class="alert">
       <div class="alert-icon-wrap">
-        <AlertIcon :fontSize="fontSize"></AlertIcon>
+        <AlertIcon :font-size="fontSize" />
       </div>
       <div class="alert-contents-wrap">
         <div class="alert-contents">
-          <p v-if="title" class="alert-contents-title">{{ props.title }}</p>
+          <p
+            v-if="title"
+            class="alert-contents-title">
+            {{ props.title }}
+          </p>
           <slot>
-            <p v-if="props.description" class="alert-contents-description">
+            <p
+              v-if="props.description"
+              class="alert-contents-description">
               {{ props.description }}
             </p>
           </slot>
@@ -16,17 +22,17 @@
         <el-button
           v-if="isShowTitleButton"
           :class="['el-button--mini', `el-button--${props.type}`]"
-          @click="handleButton"
-          plain>
+          plain
+          @click="handleButton">
           {{ props.buttonLabel }}
         </el-button>
       </div>
     </div>
     <el-button
-        v-if="isShowDescriptionButton"
-        :class="['el-button--mini', `el-button--${props.type}`]"
-        @click="handleButton"
-        plain>
+      v-if="isShowDescriptionButton"
+      :class="['el-button--mini', `el-button--${props.type}`]"
+      plain
+      @click="handleButton">
       {{ props.buttonLabel }}
     </el-button>
   </div>

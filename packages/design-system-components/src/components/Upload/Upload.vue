@@ -3,16 +3,17 @@
 
   <div>
     <el-upload
-        v-model:file-list="fileList"
-        action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
-        multiple
-        :on-preview="handlePreview"
-        :on-remove="handleRemove"
-        :before-remove="beforeRemove"
-        :limit="3"
-        :on-exceed="handleExceed"
-    >
-      <el-button type="primary">Click to upload</el-button>
+      v-model:file-list="fileList"
+      action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+      multiple
+      :on-preview="handlePreview"
+      :on-remove="handleRemove"
+      :before-remove="beforeRemove"
+      :limit="3"
+      :on-exceed="handleExceed">
+      <el-button type="primary">
+        Click to upload
+      </el-button>
       <template #tip>
         <div class="el-upload__tip">
           jpg/png files with a size less than 500KB.
@@ -23,36 +24,42 @@
 
   <div>
     <el-upload
-        class="avatar-uploader"
-        action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
-        :show-file-list="false"
-        :on-success="handleAvatarSuccess"
-        :before-upload="beforeAvatarUpload">
-      <img v-if="imageUrl" :src="imageUrl" class="avatar" alt="avatar" />
-      <el-icon v-else class="avatar-uploader-icon">
-        <Plus />
+      class="avatar-uploader"
+      action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+      :show-file-list="false"
+      :on-success="handleAvatarSuccess"
+      :before-upload="beforeAvatarUpload">
+      <img
+        v-if="imageUrl"
+        :src="imageUrl"
+        class="avatar"
+        alt="avatar">
+      <el-icon
+        v-else
+        class="avatar-uploader-icon">
+        <InfoCircleIcon />
       </el-icon>
     </el-upload>
   </div>
 
   <div>
     <el-upload
-        drag
-        action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
-        multiple>
-        <div class="upload-wrap">
-          <el-icon class="el-icon--upload">
-            <InfoCircleIcon />
-          </el-icon>
-          <div class="el-upload__text">
-            Drop file here or click to upload
-          </div>
+      drag
+      action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+      multiple>
+      <div class="upload-wrap">
+        <el-icon class="el-icon--upload">
+          <InfoCircleIcon />
+        </el-icon>
+        <div class="el-upload__text">
+          Drop file here or click to upload
         </div>
-        <template #tip>
-          <div class="el-upload__tip">
-            jpg/png files with a size less than 500kb
-          </div>
-        </template>
+      </div>
+      <template #tip>
+        <div class="el-upload__tip">
+          jpg/png files with a size less than 500kb
+        </div>
+      </template>
     </el-upload>
   </div>
 </template>
@@ -70,6 +77,7 @@ const handleAvatarSuccess: UploadProps['onSuccess'] = (
   response,
   uploadFile,
 ) => {
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   imageUrl.value = URL.createObjectURL(uploadFile.raw!);
 };
 
@@ -111,7 +119,7 @@ const handleExceed: UploadProps['onExceed'] = (files, uploadFiles) => {
   );
 };
 
-const beforeRemove: UploadProps['beforeRemove'] = (uploadFile, uploadFiles) => ElMessageBox.confirm(
+const beforeRemove: UploadProps['beforeRemove'] = (uploadFile) => ElMessageBox.confirm(
   `Cancel the transfer of ${uploadFile.name} ?`,
 ).then(
   () => true,

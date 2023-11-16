@@ -2,19 +2,47 @@
   <h2>Message</h2>
 
   <div>
-    <el-button :plain="true" @click="open2">success</el-button>
-    <el-button :plain="true" @click="open3">warning</el-button>
-    <el-button :plain="true" @click="open1">message</el-button>
-    <el-button :plain="true" @click="open4">error</el-button>
+    <el-button
+      :plain="true"
+      @click="open2">
+      success
+    </el-button>
+    <el-button
+      :plain="true"
+      @click="open3">
+      warning
+    </el-button>
+    <el-button
+      :plain="true"
+      @click="open1">
+      message
+    </el-button>
+    <el-button
+      :plain="true"
+      @click="open4">
+      error
+    </el-button>
   </div>
 
   <div>
-    <el-button :plain="true" @click="open5">message</el-button>
+    <el-button
+      :plain="true"
+      @click="open5">
+      message
+    </el-button>
   </div>
 
   <div>
-    <el-button plain @click="openCenter">Centered text</el-button>
-    <el-button :plain="true" @click="open">Show message</el-button>
+    <el-button
+      plain
+      @click="openCenter">
+      Centered text
+    </el-button>
+    <el-button
+      :plain="true"
+      @click="open">
+      Show message
+    </el-button>
   </div>
 </template>
 

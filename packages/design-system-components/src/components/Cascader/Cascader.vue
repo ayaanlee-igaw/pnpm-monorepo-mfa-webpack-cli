@@ -2,25 +2,52 @@
   <h2>Cascader</h2>
 
   <div>
-    <el-cascader v-model="value" class="el-cascader--large" :options="options" @change="handleChange" />
-    <el-cascader v-model="value" class="el-cascader--medium" :options="options" :props="props" @change="handleChange" disabled/>
-    <el-cascader v-model="value" class="el-cascader--small" :options="options" :props="props" @change="handleChange" />
-    <el-cascader v-model="value" class="el-cascader--mini" :options="options" :props="props" @change="handleChange" />
+    <el-cascader
+      v-model="value"
+      class="el-cascader--large"
+      :options="options"
+      @change="handleChange" />
+    <el-cascader
+      v-model="value"
+      class="el-cascader--medium"
+      :options="options"
+      :props="props"
+      disabled
+      @change="handleChange" />
+    <el-cascader
+      v-model="value"
+      class="el-cascader--small"
+      :options="options"
+      :props="props"
+      @change="handleChange" />
+    <el-cascader
+      v-model="value"
+      class="el-cascader--mini"
+      :options="options"
+      :props="props"
+      @change="handleChange" />
   </div>
 
   <div>
     <p>Display all tags (default)</p>
-    <el-cascader :options="options2" :props="props2" clearable filterable />
+    <el-cascader
+      :options="options2"
+      :props="props2"
+      clearable
+      filterable />
     <p>Collapse tags</p>
-    <el-cascader :options="options2" :props="props2" collapse-tags clearable />
+    <el-cascader
+      :options="options2"
+      :props="props2"
+      collapse-tags
+      clearable />
     <p>Collapse tags tooltip</p>
     <el-cascader
       :options="options2"
       :props="props2"
       collapse-tags
       collapse-tags-tooltip
-      clearable
-    />
+      clearable />
     <p>Max Collapse Tags</p>
     <el-cascader
       :options="options2"
@@ -28,8 +55,7 @@
       collapse-tags
       collapse-tags-tooltip
       max-collapse-tags="3"
-      clearable
-      />
+      clearable />
   </div>
 </template>
 
@@ -44,6 +70,7 @@ const props = {
 
 const props2 = { multiple: true };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const handleChange = (change: any) => {
   console.log(change);
 };
