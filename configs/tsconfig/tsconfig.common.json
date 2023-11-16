@@ -11,8 +11,8 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
-    "paths": {
-      "designSystemComponents/router": ["./packages/design-system-components/index.d"],
-    }
+//    "paths": {
+//      "designSystemComponents/router": ["./packages/design-system-components/index.d.ts"],
+//    },
   },
 }

@@ -5,7 +5,6 @@ import {
 } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 
-// @ts-ignore
 // eslint-disable-next-line import/extensions,import/no-unresolved
 const designSystemComponentsModule = await import('designSystemComponents/router');
 const designSystemComponentsRouter = designSystemComponentsModule.default;
