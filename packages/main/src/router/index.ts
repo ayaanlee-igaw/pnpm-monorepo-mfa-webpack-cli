@@ -2,14 +2,13 @@ import {
   createRouter,
   createWebHistory,
   RouteRecordRaw,
-  Router,
 } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 
 // @ts-ignore
 // eslint-disable-next-line import/extensions,import/no-unresolved
 const designSystemComponentsModule = await import('designSystemComponents/router');
-const designSystemComponentsRouter: Router = designSystemComponentsModule.default;
+const designSystemComponentsRouter = designSystemComponentsModule.default;
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,7 +16,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'home',
     component: HomeView,
   },
-  ...designSystemComponentsRouter.getRoutes(),
+  ...designSystemComponentsRouter,
 ];
 
 const router = createRouter({
