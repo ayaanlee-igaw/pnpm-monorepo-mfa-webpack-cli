@@ -46,7 +46,7 @@ importers:
     dependencies:
       '@monorepo/design-system':
         specifier: workspace:*
-        version: link:../design-system
+        version: link:../design-tokens
       core-js:
         specifier: ^3.8.3
         version: 3.33.2
@@ -152,7 +152,7 @@ importers:
     dependencies:
       '@monorepo/design-system':
         specifier: workspace:*
-        version: link:../design-system
+        version: link:../design-tokens
       core-js:
         specifier: ^3.8.3
         version: 3.33.2
