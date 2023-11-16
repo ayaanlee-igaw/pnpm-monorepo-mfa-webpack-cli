@@ -1,5 +1,5 @@
 import 'element-plus/dist/index.css';
-import '@monorepo/element-plus-design-system/src/styles/styles.scss';
+import '@monorepo/design-system/src/styles/styles.scss';
 
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';

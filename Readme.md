@@ -31,7 +31,7 @@ yarn berry는 packages 디렉터리 안에 workspace들을 관리하는 형태
 packages:
   - 'packages/main'
   - 'packages/design-system-components'
-  - 'packages/element-plus-design-system'
+  - 'packages/design-system'
 ```
 
 ### config
@@ -59,14 +59,14 @@ module.exports = {
 
 ![image](https://github.com/ayaanlee-igaw/pnpm-monorepo-mfa-webpack-cli/assets/117155989/ea0579c7-8d45-4098-9bb1-076ef6b592b0)
 
-디자인 토큰과 디자인 시스템은 element-plus-design-system 이라는 dependency로 관리
+디자인 토큰과 디자인 시스템은 design-system 이라는 dependency로 관리
 
 ```
 // micro app1 package.json
 "dependencies": {
     //...
     "element-plus": "^2.4.1",
-    "@monorepo/element-plus-design-system": "workspace:*"
+    "@monorepo/design-system": "workspace:*"
   },
 ```
 
@@ -75,7 +75,7 @@ module.exports = {
 ```
 // micro app1 main.ts
 import 'element-plus/dist/index.css';
-import '@monorepo/element-plus-design-system/src/styles/styles.scss';
+import '@monorepo/design-system/src/styles/styles.scss';
 
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';

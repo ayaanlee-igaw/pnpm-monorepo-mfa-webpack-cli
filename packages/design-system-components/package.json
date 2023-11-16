@@ -15,7 +15,7 @@
     "vue-router": "^4.2.5",
     "pinia": "^2.1.7",
     "element-plus": "^2.4.1",
-    "@monorepo/element-plus-design-system": "workspace:*"
+    "@monorepo/design-system": "workspace:*"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",

@@ -2,12 +2,13 @@ const { defineConfig } = require('@vue/cli-service');
 const { ModuleFederationPlugin } = require('webpack').container;
 
 module.exports = defineConfig({
+  // 서비스별로 개발할 경우 publicPath 주석처리 해주세요.
+  publicPath: 'auto',
   pages: {
     index: {
       entry: './src/index.ts',
     },
   },
-  publicPath: 'auto',
   configureWebpack: {
     optimization: {
       splitChunks: {
@@ -39,9 +40,11 @@ module.exports = defineConfig({
         shared: {
           vue: {
             singleton: true,
+            version: '3.3.4',
           },
           'element-plus': {
             singleton: true,
+            version: '2.4.1',
           },
         },
       }),

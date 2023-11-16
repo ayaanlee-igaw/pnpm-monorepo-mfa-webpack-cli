@@ -1,4 +1,4 @@
 packages:
   - 'packages/main'
   - 'packages/design-system-components'
-  - 'packages/element-plus-design-system'
+  - 'packages/design-system'
