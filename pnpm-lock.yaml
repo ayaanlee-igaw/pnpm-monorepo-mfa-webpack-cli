@@ -184,6 +184,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: 5.21.0
         version: 5.21.0(eslint@8.53.0)(typescript@4.9.5)
+      '@vue/babel-plugin-jsx':
+        specifier: ^1.1.5
+        version: 1.1.5(@babel/core@7.23.3)
       '@vue/cli-plugin-babel':
         specifier: ~5.0.0
         version: 5.0.8(@vue/cli-service@5.0.8)(core-js@3.33.2)(vue@3.3.8)
