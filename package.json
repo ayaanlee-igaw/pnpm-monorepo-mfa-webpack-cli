@@ -5,7 +5,10 @@
     "build:token": "pnpm --parallel --filter \"@monorepo/design-system\" build:token",
     "serve": "pnpm --parallel --filter \"./**\" serve",
     "lint": "pnpm --parallel --filter \"./**\" lint",
-    "lint:fix": "pnpm --parallel --filter \"./**\" lint:fix"
+    "lint:fix": "pnpm --parallel --filter \"./**\" lint:fix",
+    "main": "pnpm --filter \"@monorepo/main\"",
+    "design-system": "pnpm --filter \"@monorepo/design-system\"",
+    "design-system-compoments": "pnpm --filter \"@monorepo/design-system-compoments\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
@@ -13,11 +16,11 @@
     "@vue/cli-plugin-eslint": "5.0.8",
     "@vue/eslint-config-typescript": "11.0.3",
     "eslint": "8.53.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-vue": "9.16.0",
     "eslint-plugin-vuejs-accessibility": "1.2.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
     "prettier": "^3.0.3"
   }
 }

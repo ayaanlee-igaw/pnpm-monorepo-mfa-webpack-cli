@@ -1,12 +1,18 @@
 # MFA
 
 ```
-pnpm install
-pnpm build
-pnpm serve
-pnpm lint
-pnpm lint:fix
+"build": "pnpm --parallel --filter \"./**\" build",
+"build:token": "pnpm --parallel --filter \"@monorepo/design-system\" build:token",
+"serve": "pnpm --parallel --filter \"./**\" serve",
+"lint": "pnpm --parallel --filter \"./**\" lint",
+"lint:fix": "pnpm --parallel --filter \"./**\" lint:fix",
+"main": "pnpm --filter \"@monorepo/main\"",
+"design-system": "pnpm --filter \"@monorepo/design-system\"",
+"design-system-compoments": "pnpm --filter \"@monorepo/design-system-compoments\""
 ```
+
+- 토큰 변환: pnpm build:token
+- 특정 마이크로 앱에 라이브러리 추가: pnpm main add element-plus
 
 ## Stack
 
