@@ -1,14 +1,10 @@
-import {
-  createRouter,
-  createWebHistory,
-  RouteRecordRaw,
-} from 'vue-router';
-import DesignSystemComponentsView from '../views/DesignSystemComponentsView.vue';
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import DesignSystemComponentsView from "../views/DesignSystemComponentsView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/design-system-components',
-    name: 'design-system-components',
+    path: "/design-system-components",
+    name: "design-system-components",
     component: DesignSystemComponentsView,
   },
 ];

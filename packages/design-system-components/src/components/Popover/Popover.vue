@@ -9,9 +9,7 @@
       trigger="hover"
       content="this is content, this is content, this is content">
       <template #reference>
-        <el-button class="m-2">
-          Hover to activate
-        </el-button>
+        <el-button class="m-2"> Hover to activate </el-button>
       </template>
     </el-popover>
 
@@ -22,9 +20,7 @@
       trigger="click"
       content="this is content, this is content, this is content">
       <template #reference>
-        <el-button class="m-2">
-          Click to activate
-        </el-button>
+        <el-button class="m-2"> Click to activate </el-button>
       </template>
     </el-popover>
 
@@ -36,9 +32,7 @@
       trigger="focus"
       content="this is content, this is content, this is content">
       <template #reference>
-        <el-button class="m-2">
-          Focus to activate
-        </el-button>
+        <el-button class="m-2"> Focus to activate </el-button>
       </template>
     </el-popover>
 
@@ -49,9 +43,7 @@
       trigger="contextmenu"
       content="this is content, this is content, this is content">
       <template #reference>
-        <el-button class="m-2">
-          contextmenu to activate
-        </el-button>
+        <el-button class="m-2"> contextmenu to activate </el-button>
       </template>
     </el-popover>
 
@@ -77,9 +69,7 @@
       :width="400"
       trigger="click">
       <template #reference>
-        <el-button style="margin-right: 16px">
-          Click to activate
-        </el-button>
+        <el-button style="margin-right: 16px"> Click to activate </el-button>
       </template>
       <el-table :data="gridData">
         <el-table-column
@@ -156,43 +146,39 @@
         </el-button>
       </div>
       <template #reference>
-        <el-button @click="visible = true">
-          Delete
-        </el-button>
+        <el-button @click="visible = true"> Delete </el-button>
       </template>
     </el-popover>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-const visible = ref(false);
+  const visible = ref(false);
 
-const gridData = [
-  {
-    date: '2016-05-02',
-    name: 'Jack',
-    address: 'New York City',
-  },
-  {
-    date: '2016-05-04',
-    name: 'Jack',
-    address: 'New York City',
-  },
-  {
-    date: '2016-05-01',
-    name: 'Jack',
-    address: 'New York City',
-  },
-  {
-    date: '2016-05-03',
-    name: 'Jack',
-    address: 'New York City',
-  },
-];
+  const gridData = [
+    {
+      date: "2016-05-02",
+      name: "Jack",
+      address: "New York City",
+    },
+    {
+      date: "2016-05-04",
+      name: "Jack",
+      address: "New York City",
+    },
+    {
+      date: "2016-05-01",
+      name: "Jack",
+      address: "New York City",
+    },
+    {
+      date: "2016-05-03",
+      name: "Jack",
+      address: "New York City",
+    },
+  ];
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -2,40 +2,22 @@
   <h2>Button</h2>
   <div>
     <el-button>Default</el-button>
-    <el-button class="el-button--medium">
-      Default
-    </el-button>
-    <el-button class="el-button--small">
-      Default
-    </el-button>
-    <el-button class="el-button--mini">
-      Default
-    </el-button>
+    <el-button class="el-button--medium"> Default </el-button>
+    <el-button class="el-button--small"> Default </el-button>
+    <el-button class="el-button--mini"> Default </el-button>
   </div>
 
   <div>
     <el-button>Default</el-button>
-    <el-button type="primary">
-      Primary
-    </el-button>
-    <el-button type="success">
-      Success
-    </el-button>
-    <el-button type="info">
-      Info
-    </el-button>
-    <el-button type="warning">
-      Warning
-    </el-button>
-    <el-button type="danger">
-      Danger
-    </el-button>
+    <el-button type="primary"> Primary </el-button>
+    <el-button type="success"> Success </el-button>
+    <el-button type="info"> Info </el-button>
+    <el-button type="warning"> Warning </el-button>
+    <el-button type="danger"> Danger </el-button>
   </div>
 
   <div>
-    <el-button plain>
-      Default
-    </el-button>
+    <el-button plain> Default </el-button>
     <el-button
       plain
       type="primary">
@@ -64,9 +46,7 @@
   </div>
 
   <div>
-    <el-button round>
-      Round
-    </el-button>
+    <el-button round> Round </el-button>
     <el-button
       type="primary"
       round>
@@ -133,9 +113,7 @@
   </div>
 
   <div>
-    <el-button disabled>
-      Default
-    </el-button>
+    <el-button disabled> Default </el-button>
     <el-button
       type="primary"
       disabled>
@@ -246,9 +224,7 @@
   </div>
 
   <div>
-    <el-button circle>
-      D
-    </el-button>
+    <el-button circle> D </el-button>
     <el-button
       circle
       type="primary">
@@ -277,9 +253,7 @@
   </div>
 
   <div>
-    <el-button class="is-square">
-      D
-    </el-button>
+    <el-button class="is-square"> D </el-button>
     <el-button
       class="is-square"
       type="primary">
@@ -329,17 +303,15 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const buttons: any = [
-  { type: '', text: 'plain' },
-  { type: 'primary', text: 'primary', class: 'el-button--large' },
-  { type: 'success', text: 'success', class: 'el-button--medium' },
-  { type: 'info', text: 'info', class: 'el-button--small' },
-  { type: 'warning', text: 'warning', class: 'el-button--mini' },
-  { type: 'danger', text: 'danger' },
-] as const;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const buttons: any = [
+    { type: "", text: "plain" },
+    { type: "primary", text: "primary", class: "el-button--large" },
+    { type: "success", text: "success", class: "el-button--medium" },
+    { type: "info", text: "info", class: "el-button--small" },
+    { type: "warning", text: "warning", class: "el-button--mini" },
+    { type: "danger", text: "danger" },
+  ] as const;
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

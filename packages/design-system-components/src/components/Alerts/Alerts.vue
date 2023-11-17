@@ -37,18 +37,18 @@
 </template>
 
 <script setup lang="ts">
-import Alert from '@/components/Alert/Alert.vue';
-import { AlertType } from '@/components/Alert/alertType';
+  import Alert from "@/components/Alert/Alert.vue";
+  import { AlertType } from "@/components/Alert/alertType";
 
-function handleButton() {
-  console.log('button');
-}
+  function handleButton() {
+    console.log("button");
+  }
 </script>
 
 <style scoped>
-.alert-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  .alert-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 </style>

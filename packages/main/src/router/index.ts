@@ -1,17 +1,15 @@
-import {
-  createRouter,
-  createWebHistory,
-  RouteRecordRaw,
-} from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import HomeView from "../views/HomeView.vue";
 
-const designSystemComponentsModule = await import('designSystemComponents/router');
+const designSystemComponentsModule = await import(
+  "designSystemComponents/router"
+);
 const designSystemComponentsRouter = designSystemComponentsModule.default;
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'home',
+    path: "/",
+    name: "home",
     component: HomeView,
   },
   ...designSystemComponentsRouter.getRoutes(),

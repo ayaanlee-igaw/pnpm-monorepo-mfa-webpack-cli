@@ -52,26 +52,24 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-const checked1 = ref(true);
-const checked2 = ref(true);
-const checkAll = ref(false);
-const isIndeterminate = ref(true);
-const checkedCities = ref(['Shanghai', 'Beijing']);
-const cities = ['Shanghai', 'Beijing', 'Guangzhou', 'Shenzhen'];
+  const checked1 = ref(true);
+  const checked2 = ref(true);
+  const checkAll = ref(false);
+  const isIndeterminate = ref(true);
+  const checkedCities = ref(["Shanghai", "Beijing"]);
+  const cities = ["Shanghai", "Beijing", "Guangzhou", "Shenzhen"];
 
-const handleCheckAllChange = (val: boolean) => {
-  checkedCities.value = val ? cities : [];
-  isIndeterminate.value = false;
-};
-const handleCheckedCitiesChange = (value: string[]) => {
-  const checkedCount = value.length;
-  checkAll.value = checkedCount === cities.length;
-  isIndeterminate.value = checkedCount > 0 && checkedCount < cities.length;
-};
+  const handleCheckAllChange = (val: boolean) => {
+    checkedCities.value = val ? cities : [];
+    isIndeterminate.value = false;
+  };
+  const handleCheckedCitiesChange = (value: string[]) => {
+    const checkedCount = value.length;
+    checkAll.value = checkedCount === cities.length;
+    isIndeterminate.value = checkedCount > 0 && checkedCount < cities.length;
+  };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -124,73 +124,71 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-const value = ref('');
-const value1 = ref([]);
-const value3 = ref('');
+  const value = ref("");
+  const value1 = ref([]);
+  const value3 = ref("");
 
-const options = [
-  {
-    value: 'Option1',
-    label: 'Option1',
-  },
-  {
-    value: 'Option2',
-    label: 'Option2',
-  },
-  {
-    value: 'Option3',
-    label: 'Option3',
-  },
-  {
-    value: 'Option4',
-    label: 'Option4',
-  },
-  {
-    value: 'Option5',
-    label: 'Option5',
-  },
-];
+  const options = [
+    {
+      value: "Option1",
+      label: "Option1",
+    },
+    {
+      value: "Option2",
+      label: "Option2",
+    },
+    {
+      value: "Option3",
+      label: "Option3",
+    },
+    {
+      value: "Option4",
+      label: "Option4",
+    },
+    {
+      value: "Option5",
+      label: "Option5",
+    },
+  ];
 
-const options3 = [
-  {
-    label: 'Popular cities',
-    options: [
-      {
-        value: 'Shanghai',
-        label: 'Shanghai',
-      },
-      {
-        value: 'Beijing',
-        label: 'Beijing',
-      },
-    ],
-  },
-  {
-    label: 'City name',
-    options: [
-      {
-        value: 'Chengdu',
-        label: 'Chengdu',
-      },
-      {
-        value: 'Shenzhen',
-        label: 'Shenzhen',
-      },
-      {
-        value: 'Guangzhou',
-        label: 'Guangzhou',
-      },
-      {
-        value: 'Dalian',
-        label: 'Dalian',
-      },
-    ],
-  },
-];
+  const options3 = [
+    {
+      label: "Popular cities",
+      options: [
+        {
+          value: "Shanghai",
+          label: "Shanghai",
+        },
+        {
+          value: "Beijing",
+          label: "Beijing",
+        },
+      ],
+    },
+    {
+      label: "City name",
+      options: [
+        {
+          value: "Chengdu",
+          label: "Chengdu",
+        },
+        {
+          value: "Shenzhen",
+          label: "Shenzhen",
+        },
+        {
+          value: "Guangzhou",
+          label: "Guangzhou",
+        },
+        {
+          value: "Dalian",
+          label: "Dalian",
+        },
+      ],
+    },
+  ];
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

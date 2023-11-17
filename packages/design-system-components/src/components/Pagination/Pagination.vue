@@ -1,17 +1,14 @@
 <template>
   <h2>Pagination</h2>
 
-  <div style="display: flex;align-items: center;gap: 10px;margin-bottom: 20px;">
+  <div
+    style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px">
     <h3>조작</h3>
     <el-radio-group
       v-model="small"
       class="mr-4">
-      <el-radio-button :label="false">
-        default
-      </el-radio-button>
-      <el-radio-button :label="true">
-        small
-      </el-radio-button>
+      <el-radio-button :label="false"> default </el-radio-button>
+      <el-radio-button :label="true"> small </el-radio-button>
     </el-radio-group>
     <div>
       background:
@@ -20,16 +17,15 @@
         class="ml-2" />
     </div>
     <div class="ml-4">
-      disabled: <el-switch
+      disabled:
+      <el-switch
         v-model="disabled"
         class="ml-2" />
     </div>
   </div>
 
   <div class="demo-pagination-block">
-    <div class="demonstration">
-      Total item count
-    </div>
+    <div class="demonstration">Total item count</div>
     <el-pagination
       v-model:current-page="currentPage1"
       :page-size="100"
@@ -42,9 +38,7 @@
       @current-change="handleCurrentChange" />
   </div>
   <div class="demo-pagination-block">
-    <div class="demonstration">
-      Change page size
-    </div>
+    <div class="demonstration">Change page size</div>
     <el-pagination
       v-model:current-page="currentPage2"
       v-model:page-size="pageSize2"
@@ -58,9 +52,7 @@
       @current-change="handleCurrentChange" />
   </div>
   <div class="demo-pagination-block">
-    <div class="demonstration">
-      Jump to
-    </div>
+    <div class="demonstration">Jump to</div>
     <el-pagination
       v-model:current-page="currentPage3"
       v-model:page-size="pageSize3"
@@ -73,9 +65,7 @@
       @current-change="handleCurrentChange" />
   </div>
   <div class="demo-pagination-block">
-    <div class="demonstration">
-      All combined
-    </div>
+    <div class="demonstration">All combined</div>
     <el-pagination
       v-model:current-page="currentPage4"
       v-model:page-size="pageSize4"
@@ -91,26 +81,25 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-const currentPage1 = ref(5);
-const currentPage2 = ref(5);
-const currentPage3 = ref(5);
-const currentPage4 = ref(4);
-const pageSize2 = ref(100);
-const pageSize3 = ref(100);
-const pageSize4 = ref(100);
-const small = ref(false);
-const background = ref(false);
-const disabled = ref(false);
+  const currentPage1 = ref(5);
+  const currentPage2 = ref(5);
+  const currentPage3 = ref(5);
+  const currentPage4 = ref(4);
+  const pageSize2 = ref(100);
+  const pageSize3 = ref(100);
+  const pageSize4 = ref(100);
+  const small = ref(false);
+  const background = ref(false);
+  const disabled = ref(false);
 
-const handleSizeChange = (val: number) => {
-  console.log(`${val} items per page`);
-};
-const handleCurrentChange = (val: number) => {
-  console.log(`current page: ${val}`);
-};
+  const handleSizeChange = (val: number) => {
+    console.log(`${val} items per page`);
+  };
+  const handleCurrentChange = (val: number) => {
+    console.log(`current page: ${val}`);
+  };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

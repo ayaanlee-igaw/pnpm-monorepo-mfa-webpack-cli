@@ -14,12 +14,8 @@
           <el-dropdown-item>Action 1</el-dropdown-item>
           <el-dropdown-item>Action 2</el-dropdown-item>
           <el-dropdown-item>Action 3</el-dropdown-item>
-          <el-dropdown-item disabled>
-            Action 4
-          </el-dropdown-item>
-          <el-dropdown-item divided>
-            Action 5
-          </el-dropdown-item>
+          <el-dropdown-item disabled> Action 4 </el-dropdown-item>
+          <el-dropdown-item divided> Action 5 </el-dropdown-item>
         </el-dropdown-menu>
       </template>
     </el-dropdown>
@@ -40,25 +36,18 @@
 
     <el-dropdown>
       <span class="el-dropdown-link">
-        Dropdown List<el-icon class="el-icon--right"><InfoCircleIcon /></el-icon>
+        Dropdown List
+        <el-icon class="el-icon--right">
+          <InfoCircleIcon />
+        </el-icon>
       </span>
       <template #dropdown>
         <el-dropdown-menu>
-          <el-dropdown-item :icon="InfoCircleIcon">
-            Action 1
-          </el-dropdown-item>
-          <el-dropdown-item :icon="InfoCircleIcon">
-            Action 2
-          </el-dropdown-item>
-          <el-dropdown-item :icon="InfoCircleIcon">
-            Action 3
-          </el-dropdown-item>
-          <el-dropdown-item :icon="InfoCircleIcon">
-            Action 4
-          </el-dropdown-item>
-          <el-dropdown-item :icon="InfoCircleIcon">
-            Action 5
-          </el-dropdown-item>
+          <el-dropdown-item :icon="InfoCircleIcon"> Action 1 </el-dropdown-item>
+          <el-dropdown-item :icon="InfoCircleIcon"> Action 2 </el-dropdown-item>
+          <el-dropdown-item :icon="InfoCircleIcon"> Action 3 </el-dropdown-item>
+          <el-dropdown-item :icon="InfoCircleIcon"> Action 4 </el-dropdown-item>
+          <el-dropdown-item :icon="InfoCircleIcon"> Action 5 </el-dropdown-item>
         </el-dropdown-menu>
       </template>
     </el-dropdown>
@@ -136,13 +125,11 @@
 </template>
 
 <script setup lang="ts">
-import InfoCircleIcon from '@/assets/icons/InfoCircleIcon.vue';
+  import InfoCircleIcon from "@/assets/icons/InfoCircleIcon.vue";
 
-const handleClick = () => {
-  alert('button click');
-};
+  const handleClick = () => {
+    alert("button click");
+  };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

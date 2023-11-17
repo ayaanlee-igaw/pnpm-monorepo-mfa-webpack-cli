@@ -20,16 +20,12 @@
     <el-input
       v-model="input1"
       placeholder="Please input">
-      <template #prepend>
-        Http://
-      </template>
+      <template #prepend> Http:// </template>
     </el-input>
     <el-input
       v-model="input2"
       placeholder="Please input">
-      <template #append>
-        .com
-      </template>
+      <template #append> .com </template>
     </el-input>
     <el-input
       v-model="input3"
@@ -150,22 +146,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import InfoCircleIcon from '@/assets/icons/InfoCircleIcon.vue';
+  import { ref } from "vue";
+  import InfoCircleIcon from "@/assets/icons/InfoCircleIcon.vue";
 
-const select = ref('');
-const input1 = ref('');
-const input2 = ref('');
-const input3 = ref('');
-const textarea1 = ref('');
-const textarea2 = ref('');
+  const select = ref("");
+  const input1 = ref("");
+  const input2 = ref("");
+  const input3 = ref("");
+  const textarea1 = ref("");
+  const textarea2 = ref("");
 
-const num = ref(1);
-const handleChange = (value: number) => {
-  console.log(value);
-};
+  const num = ref(1);
+  const handleChange = (value: number) => {
+    console.log(value);
+  };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -47,9 +47,7 @@
         effect="dark"
         content="Left Center prompts info"
         placement="left">
-        <el-button class="mt-3 mb-3">
-          left
-        </el-button>
+        <el-button class="mt-3 mb-3"> left </el-button>
       </el-tooltip>
       <el-tooltip
         class="box-item"
@@ -101,23 +99,22 @@
   </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
-.tooltip-base-box {
-  width: 600px;
-}
-.tooltip-base-box .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.tooltip-base-box .center {
-  justify-content: center;
-}
-.tooltip-base-box .box-item {
-  width: 110px;
-  margin-top: 10px;
-}
+  .tooltip-base-box {
+    width: 600px;
+  }
+  .tooltip-base-box .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .tooltip-base-box .center {
+    justify-content: center;
+  }
+  .tooltip-base-box .box-item {
+    width: 110px;
+    margin-top: 10px;
+  }
 </style>

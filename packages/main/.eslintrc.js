@@ -1,3 +1,3 @@
 module.exports = {
-  extends: require.resolve('../../configs/eslint/.eslintrc.vue.js'),
+  extends: require.resolve("../../configs/eslint/.eslintrc.vue.js"),
 };

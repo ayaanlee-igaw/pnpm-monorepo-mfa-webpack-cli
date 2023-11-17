@@ -14,18 +14,16 @@
 </template>
 
 <script setup lang="ts">
-import { withDefaults, defineProps } from 'vue';
-import IconWrapper from '@/components/IconWrapper/IconWrapper.vue';
+  import { withDefaults, defineProps } from "vue";
+  import IconWrapper from "@/components/IconWrapper/IconWrapper.vue";
 
-interface InfoCircleProps {
-  color?: string;
-}
+  interface InfoCircleProps {
+    color?: string;
+  }
 
-const props = withDefaults(defineProps<InfoCircleProps>(), {
-  color: '#676A7E',
-});
-
+  const props = withDefaults(defineProps<InfoCircleProps>(), {
+    color: "#676A7E",
+  });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

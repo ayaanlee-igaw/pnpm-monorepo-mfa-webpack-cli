@@ -10,11 +10,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-const value1 = ref(true);
+  const value1 = ref(true);
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

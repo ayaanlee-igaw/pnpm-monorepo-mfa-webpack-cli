@@ -3,18 +3,10 @@
 
   <div>
     <el-tag>Tag 1</el-tag>
-    <el-tag type="success">
-      Tag 2
-    </el-tag>
-    <el-tag type="info">
-      Tag 3
-    </el-tag>
-    <el-tag type="warning">
-      Tag 4
-    </el-tag>
-    <el-tag type="danger">
-      Tag 5
-    </el-tag>
+    <el-tag type="success"> Tag 2 </el-tag>
+    <el-tag type="info"> Tag 3 </el-tag>
+    <el-tag type="warning"> Tag 4 </el-tag>
+    <el-tag type="danger"> Tag 5 </el-tag>
   </div>
 
   <div>
@@ -29,18 +21,10 @@
   </div>
 
   <div>
-    <el-tag class="el-tag--large">
-      Large
-    </el-tag>
-    <el-tag class="el-tag--medium">
-      Default
-    </el-tag>
-    <el-tag class="el-tag--small">
-      Small
-    </el-tag>
-    <el-tag class="el-tag--mini">
-      Mini
-    </el-tag>
+    <el-tag class="el-tag--large"> Large </el-tag>
+    <el-tag class="el-tag--medium"> Default </el-tag>
+    <el-tag class="el-tag--small"> Small </el-tag>
+    <el-tag class="el-tag--mini"> Mini </el-tag>
     <el-tag
       class="el-tag--large"
       closable>
@@ -64,12 +48,8 @@
   </div>
 
   <div>
-    <el-tag effect="plain">
-      Tag 2
-    </el-tag>
-    <el-tag effect="dark">
-      Tag 1
-    </el-tag>
+    <el-tag effect="plain"> Tag 2 </el-tag>
+    <el-tag effect="dark"> Tag 1 </el-tag>
     <el-tag
       type="success"
       effect="dark">
@@ -94,17 +74,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-const tags = ref([
-  { name: 'Tag 1', type: '' },
-  { name: 'Tag 2', type: 'success' },
-  { name: 'Tag 3', type: 'info' },
-  { name: 'Tag 4', type: 'warning' },
-  { name: 'Tag 5', type: 'danger' },
-]);
+  const tags = ref([
+    { name: "Tag 1", type: "" },
+    { name: "Tag 2", type: "success" },
+    { name: "Tag 3", type: "info" },
+    { name: "Tag 4", type: "warning" },
+    { name: "Tag 5", type: "danger" },
+  ]);
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

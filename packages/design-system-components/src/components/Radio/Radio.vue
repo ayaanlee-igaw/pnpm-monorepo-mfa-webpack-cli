@@ -1,24 +1,16 @@
 <template>
   <h2>Radio</h2>
 
-  <div style="display: flex; gap: 20px;">
+  <div style="display: flex; gap: 20px">
     <el-radio-group v-model="radio1">
-      <el-radio label="1">
-        Option 1
-      </el-radio>
-      <el-radio label="2">
-        Option 2
-      </el-radio>
+      <el-radio label="1"> Option 1 </el-radio>
+      <el-radio label="2"> Option 2 </el-radio>
     </el-radio-group>
     <el-radio-group
       v-model="radio1"
       diabled>
-      <el-radio label="1">
-        Option 1
-      </el-radio>
-      <el-radio label="2">
-        Option 2
-      </el-radio>
+      <el-radio label="1"> Option 1 </el-radio>
+      <el-radio label="2"> Option 2 </el-radio>
     </el-radio-group>
     <el-radio-group v-model="radio1">
       <el-radio
@@ -26,13 +18,11 @@
         disabled>
         Option 1
       </el-radio>
-      <el-radio label="2">
-        Option 2
-      </el-radio>
+      <el-radio label="2"> Option 2 </el-radio>
     </el-radio-group>
   </div>
 
-  <div style="display: flex; gap: 20px;">
+  <div style="display: flex; gap: 20px">
     <el-radio-group v-model="radio1">
       <el-radio
         label="1"
@@ -152,11 +142,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-const radio1 = ref('1');
+  const radio1 = ref("1");
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

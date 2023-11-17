@@ -17,7 +17,7 @@
       status="exception" />
   </div>
 
-  <div style="display: flex;flex-direction: column;gap: 10px;">
+  <div style="display: flex; flex-direction: column; gap: 10px">
     <el-progress
       :text-inside="true"
       :stroke-width="26"
@@ -62,9 +62,8 @@
 </template>
 
 <script setup lang="ts">
-const format = (percentage: number) => (percentage === 100 ? 'Full' : `${percentage}%`);
+  const format = (percentage: number) =>
+    percentage === 100 ? "Full" : `${percentage}%`;
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

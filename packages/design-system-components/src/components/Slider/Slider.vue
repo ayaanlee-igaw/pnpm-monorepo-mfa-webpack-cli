@@ -42,13 +42,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-const value = ref(0);
+  const value = ref(0);
 
-const formatTooltip = (val: number) => val / 100;
+  const formatTooltip = (val: number) => val / 100;
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

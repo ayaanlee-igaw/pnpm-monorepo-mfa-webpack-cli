@@ -58,23 +58,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import { ElMessageBox } from 'element-plus';
+  import { ref } from "vue";
+  import { ElMessageBox } from "element-plus";
 
-const dialogVisible1 = ref(false);
-const centerDialogVisible = ref(false);
+  const dialogVisible1 = ref(false);
+  const centerDialogVisible = ref(false);
 
-const handleClose1 = () => {
-  ElMessageBox.alert('This is a message', 'Title', {
-    confirmButtonText: 'OK',
-    center: true,
-  });
-};
-const handleClose2 = () => {
-  ElMessageBox.alert('This is a message', 'Title', {
-    confirmButtonText: 'OK',
-  });
-};
+  const handleClose1 = () => {
+    ElMessageBox.alert("This is a message", "Title", {
+      confirmButtonText: "OK",
+      center: true,
+    });
+  };
+  const handleClose2 = () => {
+    ElMessageBox.alert("This is a message", "Title", {
+      confirmButtonText: "OK",
+    });
+  };
 </script>
 
 <style scoped></style>

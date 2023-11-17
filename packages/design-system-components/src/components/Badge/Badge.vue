@@ -82,9 +82,7 @@
 </template>
 
 <script setup lang="ts">
-import InfoCircleIcon from '@/assets/icons/InfoCircleIcon.vue';
+  import InfoCircleIcon from "@/assets/icons/InfoCircleIcon.vue";
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
