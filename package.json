@@ -8,7 +8,7 @@
     "lint:fix": "pnpm --parallel --filter \"./**\" lint:fix",
     "main": "pnpm --filter \"@monorepo/main\"",
     "design-system": "pnpm --filter \"@monorepo/design-system\"",
-    "design-system-compoments": "pnpm --filter \"@monorepo/design-system-compoments\""
+    "design-system-compoments": "pnpm --filter \"@monorepo/design-system-components\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",

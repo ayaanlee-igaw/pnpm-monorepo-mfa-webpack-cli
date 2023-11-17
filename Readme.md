@@ -12,7 +12,10 @@
 ```
 
 - 토큰 변환: pnpm build:token
-- 특정 마이크로 앱에 라이브러리 추가: pnpm main add element-plus
+- 특정 마이크로 앱 사용 예시
+  - pnpm main add element-plus
+  - pnpm main add eslint --save-dev
+  - pnpm main serve
 
 ## Stack
 
