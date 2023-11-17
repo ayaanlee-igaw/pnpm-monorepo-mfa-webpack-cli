@@ -1,5 +1,6 @@
 <template>
   <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div class="test" />
     <Alerts />
     <hr class="my-4">
     <Badge />
@@ -66,4 +67,9 @@ import Alerts from '@/components/Alerts/Alerts.vue';
 </script>
 
 <style scoped>
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: var(--comp-progress-color-background-bar-red);
+}
 </style>

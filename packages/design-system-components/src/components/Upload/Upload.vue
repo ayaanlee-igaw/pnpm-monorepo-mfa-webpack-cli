@@ -67,7 +67,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import {
-  ElMessage, ElMessageBox, UploadProps, UploadUserFile,
+  ElMessage,
+  ElMessageBox,
+  UploadProps,
+  UploadUserFile,
 } from 'element-plus';
 import InfoCircleIcon from '@/assets/icons/InfoCircleIcon.vue';
 
@@ -85,7 +88,8 @@ const beforeAvatarUpload: UploadProps['beforeUpload'] = (rawFile) => {
   if (rawFile.type !== 'image/jpeg') {
     ElMessage.error('Avatar picture must be JPG format!');
     return false;
-  } if (rawFile.size / 1024 / 1024 > 2) {
+  }
+  if (rawFile.size / 1024 / 1024 > 2) {
     ElMessage.error('Avatar picture size can not exceed 2MB!');
     return false;
   }
@@ -119,14 +123,11 @@ const handleExceed: UploadProps['onExceed'] = (files, uploadFiles) => {
   );
 };
 
-const beforeRemove: UploadProps['beforeRemove'] = (uploadFile) => ElMessageBox.confirm(
-  `Cancel the transfer of ${uploadFile.name} ?`,
-).then(
-  () => true,
-  () => false,
-);
+const beforeRemove: UploadProps['beforeRemove'] = (uploadFile) =>
+  ElMessageBox.confirm(`Cancel the transfer of ${uploadFile.name} ?`).then(
+    () => true,
+    () => false,
+  );
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

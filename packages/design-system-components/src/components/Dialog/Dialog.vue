@@ -77,5 +77,4 @@ const handleClose2 = () => {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
