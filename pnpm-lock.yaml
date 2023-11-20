@@ -96,6 +96,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^5.4.0
         version: 5.62.0(eslint@8.53.0)(typescript@4.9.5)
+      '@vue/babel-plugin-jsx':
+        specifier: ^1.1.5
+        version: 1.1.5(@babel/core@7.23.3)
       '@vue/cli-plugin-babel':
         specifier: ~5.0.0
         version: 5.0.8(@vue/cli-service@5.0.8)(core-js@3.33.2)(vue@3.3.8)
@@ -180,6 +183,9 @@ importers:
       '@monorepo/design-system':
         specifier: workspace:*
         version: link:../design-system
+      axios:
+        specifier: ^1.6.2
+        version: 1.6.2
       core-js:
         specifier: ^3.8.3
         version: 3.33.2
@@ -199,6 +205,9 @@ importers:
         specifier: ^4.2.5
         version: 4.2.5(vue@3.3.8)
     devDependencies:
+      '@babel/plugin-transform-private-methods':
+        specifier: ^7.23.3
+        version: 7.23.3(@babel/core@7.23.3)
       '@types/jest':
         specifier: ^27.0.1
         version: 27.5.2
@@ -274,6 +283,9 @@ importers:
       jest:
         specifier: ^27.0.5
         version: 27.5.1
+      msw:
+        specifier: ^2.0.8
+        version: 2.0.8(typescript@4.9.5)
       prettier:
         specifier: ^3.0.3
         version: 3.1.0
