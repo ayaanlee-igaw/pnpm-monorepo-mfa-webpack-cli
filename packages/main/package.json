@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "serve": "vue-cli-service serve --port 8081 --strictPort",
+    "serve:self": "vue-cli-service serve --port 8081 --strictPort --mode self",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lint:fix": "vue-cli-service lint --fix",
@@ -20,8 +21,8 @@
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/node": "^18.18.5",
-    "@typescript-eslint/eslint-plugin": "5.21.0",
-    "@typescript-eslint/parser": "5.21.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "@vue/babel-plugin-jsx": "^1.1.5",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-e2e-cypress": "~5.0.0",
@@ -45,14 +46,6 @@
     "sass-loader": "^12.0.0",
     "ts-jest": "^27.0.4",
     "webpack": "^5.89.0",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
-    "@vue/cli-plugin-eslint": "5.0.8",
-    "@vue/eslint-config-typescript": "11.0.3",
-    "eslint": "8.53.0",
-    "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-vue": "9.16.0",
-    "eslint-plugin-vuejs-accessibility": "1.2.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "prettier": "^3.0.3"

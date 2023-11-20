@@ -2,7 +2,7 @@ const { defineConfig } = require("@vue/cli-service");
 const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = defineConfig({
-  // publicPath: 'auto',
+  // publicPath: process.env.VUE_APP_SELF_SERVE ? "/" : "auto",
   pages: {
     index: {
       entry: "./src/index.ts",

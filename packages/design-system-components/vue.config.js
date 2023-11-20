@@ -2,8 +2,7 @@ const { defineConfig } = require("@vue/cli-service");
 const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = defineConfig({
-  // 서비스별로 개발할 경우 publicPath 주석처리 해주세요.
-  publicPath: process.env.VUE_APP_SELF_SERVE ? undefined : "auto",
+  publicPath: process.env.VUE_APP_SELF_SERVE ? "/" : "auto",
   pages: {
     index: {
       entry: "./src/index.ts",
