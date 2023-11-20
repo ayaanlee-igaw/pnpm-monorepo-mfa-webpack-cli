@@ -8,7 +8,15 @@
   <router-view />
 </template>
 
-<script lang="ts" setup></script>
+<script setup lang="ts">
+  import axios from "axios";
+  import { onMounted } from "vue";
+
+  onMounted(async () => {
+    await axios.get(`http://web-api/main-test`).then((res) => console.log(res));
+    await axios.get(`http://web-api/test`).then((res) => console.log(res));
+  });
+</script>
 
 <style>
   #app {

@@ -45,6 +45,10 @@ module.exports = defineConfig({
             singleton: true,
             version: "2.4.1",
           },
+          axios: {
+            singleton: true,
+            version: "1.6.2",
+          },
         },
       }),
     ],
