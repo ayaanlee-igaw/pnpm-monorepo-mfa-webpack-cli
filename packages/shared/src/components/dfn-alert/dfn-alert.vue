@@ -46,7 +46,7 @@
 
 <script setup lang="ts">
   import { computed, defineProps, withDefaults } from "vue";
-  import { AlertProps, AlertType } from "@/components/Alert/alertType";
+  import { AlertProps, AlertType } from "@/components/dfn-alert/dfn-alert-type";
   import InfoCircleIcon from "@/assets/icons/InfoCircleIcon.vue";
   import SuccessCircleIcon from "@/assets/icons/SuccessCircleIcon.vue";
   import DangerCircleIcon from "@/assets/icons/DangerCircleIcon.vue";
@@ -84,5 +84,5 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "alertStyle.scss";
+  @import "dfn-alert.scss";
 </style>

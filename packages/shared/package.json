@@ -1,0 +1,64 @@
+{
+  "name": "@monorepo/shared",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "vue-cli-service serve --port 8083 --strictPort",
+    "serve:self": "vue-cli-service serve --port 8083 --strictPort --mode self",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lint:fix": "vue-cli-service lint --fix",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "make-types": "make-federated-types -o ."
+  },
+  "dependencies": {
+    "@monorepo/design-system": "workspace:*",
+    "axios": "^1.6.2",
+    "core-js": "^3.8.3",
+    "element-plus": "^2.4.1",
+    "pinia": "^2.1.7",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-private-methods": "^7.23.3",
+    "@cloudbeds/webpack-module-federation-types-plugin": "^1.14.0",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^18.18.5",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/babel-plugin-jsx": "^1.1.5",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-e2e-cypress": "~5.0.0",
+    "@vue/cli-plugin-eslint": "5.0.8",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "11.0.3",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "babel-jest": "^27.0.6",
+    "cypress": "^9.7.0",
+    "eslint": "8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "9.16.0",
+    "eslint-plugin-vuejs-accessibility": "1.2.0",
+    "jest": "^27.0.5",
+    "msw": "^2.0.8",
+    "prettier": "^3.0.3",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "ts-jest": "^27.0.4",
+    "webpack": "^5.89.0"
+  },
+  "peerDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "msw": {
+    "workerDirectory": "src\\mocks"
+  }
+}

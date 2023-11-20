@@ -33,6 +33,9 @@ module.exports = defineConfig({
       new ModuleFederationPlugin({
         name: "designSystemComponents",
         filename: "remoteEntry.js",
+        remotes: {
+          shared: "shared@http://localhost:8083/remoteEntry.js",
+        },
         exposes: {
           "./router": "./src/router/index.ts",
         },

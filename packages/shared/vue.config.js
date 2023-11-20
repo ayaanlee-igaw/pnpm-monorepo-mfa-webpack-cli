@@ -2,21 +2,39 @@ const { defineConfig } = require("@vue/cli-service");
 const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = defineConfig({
-  // publicPath: process.env.VUE_APP_SELF_SERVE ? "/" : "auto",
+  publicPath: process.env.VUE_APP_SELF_SERVE ? "/" : "auto",
   pages: {
     index: {
       entry: "./src/index.ts",
     },
   },
   configureWebpack: {
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          defaultVendors: {
+            name: "chunk-vendors",
+            test: /[\\/]node_modules[\\/]/,
+            priority: -10,
+            chunks: "async",
+            reuseExistingChunk: true,
+          },
+          common: {
+            name: "chunk-common",
+            minChunks: 2,
+            priority: -20,
+            chunks: "async",
+            reuseExistingChunk: true,
+          },
+        },
+      },
+    },
     plugins: [
       new ModuleFederationPlugin({
-        name: "main",
+        name: "shared",
         filename: "remoteEntry.js",
-        remotes: {
-          designSystemComponents:
-            "designSystemComponents@http://localhost:8082/remoteEntry.js",
-          shared: "shared@http://localhost:8083/remoteEntry.js",
+        exposes: {
+          "./dfn-alert": "./src/components/dfn-alert/dfn-alert.vue",
         },
         shared: {
           vue: {
