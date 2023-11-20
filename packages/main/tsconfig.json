@@ -11,7 +11,7 @@
       "@/*": [
         "src/*"
       ],
-      "designSystemComponents/router": ["../../packages/design-system-components/index.d.ts"]
+      "designSystemComponents/*": ["../../packages/design-system-components/index.d.ts"]
     },
     "lib": [
       "esnext",

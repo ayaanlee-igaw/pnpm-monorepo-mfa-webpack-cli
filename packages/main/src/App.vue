@@ -5,6 +5,12 @@
       design-system-components
     </router-link>
   </nav>
+  <dfn-alert
+    type="danger"
+    :button-label="'test'"
+    :center="true"
+    description="dd"
+    :handle-button="() => {}"></dfn-alert>
   <router-view />
 </template>
 

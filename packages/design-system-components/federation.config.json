@@ -1,6 +1,7 @@
 {
   "name": "designSystemComponents",
   "exposes": {
-    "./router": "./src/router/index"
+    "./router": "./src/router/index",
+    "./components": "./src/components/index"
   }
 }
