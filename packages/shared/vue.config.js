@@ -34,7 +34,7 @@ module.exports = defineConfig({
         name: "shared",
         filename: "remoteEntry.js",
         exposes: {
-          "./dfn-alert": "./src/components/dfn-alert/dfn-alert.vue",
+          "./components": "./src/components/index.ts",
         },
         shared: {
           vue: {

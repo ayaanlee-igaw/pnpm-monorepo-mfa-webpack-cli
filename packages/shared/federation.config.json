@@ -1,6 +1,6 @@
 {
-  "name": "designSystemComponents",
+  "name": "shared",
   "exposes": {
-    "./router": "./src/router/index"
+    "./components": "./src/components/index.ts"
   }
 }

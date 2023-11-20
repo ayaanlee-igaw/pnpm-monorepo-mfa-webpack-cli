@@ -11,7 +11,7 @@
       "@/*": [
         "src/*"
       ],
-      "shared/dfn-alert": ["../../packages/shared/index.d.ts"]
+      "shared/*": ["../../packages/shared/index.d.ts"]
     },
     "lib": [
       "esnext",

@@ -8,10 +8,6 @@ import router from "./router";
 
 import App from "./App.vue";
 
-const sharedModuleAlert = defineAsyncComponent(
-  () => import("shared/dfn-alert"),
-);
-
 const app = createApp(App);
 
 // https://mswjs.io/docs/integrations/browser
@@ -27,6 +23,14 @@ enableMocking().then(() => {
   app.use(createPinia());
   app.use(ElementPlus);
   app.use(router);
-  app.component("DfnAlert", sharedModuleAlert);
+  app.component(
+    "DfnAlert",
+    defineAsyncComponent(() => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      const { DfnAlert } = import("shared/components");
+      return DfnAlert;
+    }),
+  );
   app.mount("#app");
 });
