@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-  import IconWrapper from "@/components/IconWrapper/IconWrapper.vue";
+  import IconWrapper from "@/components/icon-wrapper/icon-wrapper.vue";
   import { withDefaults, defineProps } from "vue";
 
   interface InfoCircleProps {

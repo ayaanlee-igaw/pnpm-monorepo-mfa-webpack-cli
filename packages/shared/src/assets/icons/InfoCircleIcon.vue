@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
   import { withDefaults, defineProps } from "vue";
-  import IconWrapper from "@/components/IconWrapper/IconWrapper.vue";
+  import IconWrapper from "@/components/icon-wrapper/icon-wrapper.vue";
 
   interface InfoCircleProps {
     color?: string;
