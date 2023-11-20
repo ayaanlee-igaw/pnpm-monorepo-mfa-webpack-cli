@@ -25,10 +25,8 @@ enableMocking().then(() => {
   app.use(router);
   app.component(
     "DfnAlert",
-    defineAsyncComponent(() => {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      const { DfnAlert } = import("shared/components");
+    defineAsyncComponent(async () => {
+      const { DfnAlert } = await import("shared/components");
       return DfnAlert;
     }),
   );
