@@ -10,7 +10,18 @@ import App from "./App.vue";
 
 const app = createApp(App);
 
-app.use(createPinia());
-app.use(ElementPlus);
-app.use(router);
-app.mount("#app");
+// https://mswjs.io/docs/integrations/browser
+async function enableMocking() {
+  if (process.env.NODE_ENV === "development") {
+    const { worker } = await import("./mocks/browser");
+    return worker.start();
+  }
+  return;
+}
+
+enableMocking().then(() => {
+  app.use(createPinia());
+  app.use(ElementPlus);
+  app.use(router);
+  app.mount("#app");
+});

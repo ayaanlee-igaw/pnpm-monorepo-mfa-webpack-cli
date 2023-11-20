@@ -8,6 +8,15 @@
   <router-view />
 </template>
 
+<script setup lang="ts">
+  import axios from "axios";
+  import { onMounted } from "vue";
+
+  onMounted(async () => {
+    await axios.get(`http://web-api/test`).then((res) => console.log(res));
+  });
+</script>
+
 <style>
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
