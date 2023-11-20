@@ -19,8 +19,8 @@ declare module "shared/components" {
   import { DefineComponent } from "vue";
   export const DfnAlert: DefineComponent<
     AlertProps,
-    any,
-    any,
+    {},
+    {},
     import("vue").ComputedOptions,
     import("vue").MethodOptions,
     import("vue").ComponentOptionsMixin,
