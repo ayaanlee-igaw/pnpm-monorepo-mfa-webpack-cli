@@ -1,6 +1,6 @@
 import { http, HttpResponse } from "msw";
 
-export const handlers = [
+export const designSystemComponentsHandlers = [
   http.get("http://web-api/test", ({ request, params, cookies }) => {
     return HttpResponse.json({
       user: {

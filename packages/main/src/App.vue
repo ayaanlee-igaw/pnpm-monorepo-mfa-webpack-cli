@@ -14,6 +14,7 @@
 
   onMounted(async () => {
     await axios.get(`http://web-api/main-test`).then((res) => console.log(res));
+    await axios.get(`http://web-api/test`).then((res) => console.log(res));
   });
 </script>
 
