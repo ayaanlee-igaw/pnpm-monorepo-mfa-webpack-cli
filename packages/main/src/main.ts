@@ -1,5 +1,5 @@
 import "element-plus/dist/index.css";
-import "@monorepo/design-system/src/styles/styles.scss";
+import "shared/design-system";
 
 import { createApp, defineAsyncComponent } from "vue";
 import { createPinia } from "pinia";

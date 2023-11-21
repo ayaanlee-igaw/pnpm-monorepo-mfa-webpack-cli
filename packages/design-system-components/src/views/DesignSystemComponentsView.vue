@@ -65,11 +65,3 @@
   import Message from "@/components/Message/Message.vue";
   import Alerts from "@/components/Alerts/Alerts.vue";
 </script>
-
-<style scoped>
-  .test {
-    width: 100px;
-    height: 100px;
-    background-color: var(--comp-progress-color-background-bar-red);
-  }
-</style>

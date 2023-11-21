@@ -2,7 +2,7 @@
   "name": "monorepo",
   "scripts": {
     "build": "pnpm --parallel --filter \"./**\" build",
-    "build:token": "pnpm --parallel --filter \"@monorepo/design-system\" build:token",
+    "build:token": "pnpm --parallel --filter \"@monorepo/shared\" build:token",
     "serve": "pnpm --parallel --filter \"./**\" serve",
     "lint": "pnpm --parallel --filter \"./**\" lint",
     "lint:fix": "pnpm --parallel --filter \"./**\" lint:fix",
@@ -21,6 +21,12 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-vue": "9.16.0",
     "eslint-plugin-vuejs-accessibility": "1.2.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "stylelint": "^15.11.0",
+    "stylelint-no-unsupported-browser-features": "^7.0.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-value-no-unknown-custom-properties": "^5.0.0"
   }
 }

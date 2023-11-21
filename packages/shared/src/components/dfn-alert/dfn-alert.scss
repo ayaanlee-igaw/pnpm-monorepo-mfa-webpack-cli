@@ -2,6 +2,7 @@
 @mixin alert-color($bg, $color, $border) {
   background-color: $bg;
   border-left: $border;
+
   .alert-icon-wrap {
     color: $color;
   }
@@ -44,6 +45,7 @@
         gap: var(--comp-alert-spacing-gap-text);
         font: var(--comp-alert-typography-text);
         color: var(--comp-alert-color-text-description);
+
         .alert-contents-title {
           margin-top: -2px;
           font: var(--comp-alert-typography-title);
@@ -51,6 +53,7 @@
           vertical-align: top;
         }
       }
+
       .el-button {
         margin-top: var(--comp-alert-spacing-gap-content);
       }
@@ -64,6 +67,7 @@
     var(--comp-alert-border-success)
     );
   }
+
   &.warning {
     @include alert-color(
     var(--comp-alert-color-background-warning),
@@ -71,6 +75,7 @@
     var(--comp-alert-border-warning)
     );
   }
+
   &.info {
     @include alert-color(
     var(--comp-alert-color-background-infomation),
@@ -78,6 +83,7 @@
     var(--comp-alert-border-info)
     );
   }
+
   &.danger {
     @include alert-color(
     var(--comp-alert-color-background-error),
