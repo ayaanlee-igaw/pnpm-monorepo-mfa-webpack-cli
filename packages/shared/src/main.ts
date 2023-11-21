@@ -1,7 +1,7 @@
 import "element-plus/dist/index.css";
 import "@monorepo/design-system/src/styles/styles.scss";
 
-import { createApp, defineAsyncComponent } from "vue";
+import { createApp } from "vue";
 import { createPinia } from "pinia";
 import ElementPlus from "element-plus";
 import router from "./router";
@@ -23,12 +23,5 @@ enableMocking().then(() => {
   app.use(createPinia());
   app.use(ElementPlus);
   app.use(router);
-  app.component(
-    "DfnAlert",
-    defineAsyncComponent(async () => {
-      const { DfnAlert } = await import("shared/components");
-      return DfnAlert;
-    }),
-  );
   app.mount("#app");
 });

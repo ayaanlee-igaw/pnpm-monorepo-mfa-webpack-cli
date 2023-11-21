@@ -302,6 +302,133 @@ importers:
         specifier: ^5.89.0
         version: 5.89.0
 
+  packages/shared:
+    dependencies:
+      '@monorepo/design-system':
+        specifier: workspace:*
+        version: link:../design-system
+      axios:
+        specifier: ^1.6.2
+        version: 1.6.2
+      core-js:
+        specifier: ^3.8.3
+        version: 3.33.2
+      element-plus:
+        specifier: ^2.4.1
+        version: 2.4.2(vue@3.3.8)
+      pinia:
+        specifier: ^2.1.7
+        version: 2.1.7(typescript@4.9.5)(vue@3.3.8)
+      typescript:
+        specifier: ^4.9.5
+        version: 4.9.5
+      vue:
+        specifier: ^3.3.4
+        version: 3.3.8(typescript@4.9.5)
+      vue-router:
+        specifier: ^4.2.5
+        version: 4.2.5(vue@3.3.8)
+    devDependencies:
+      '@babel/plugin-transform-private-methods':
+        specifier: ^7.23.3
+        version: 7.23.3(@babel/core@7.23.3)
+      '@cloudbeds/webpack-module-federation-types-plugin':
+        specifier: ^1.14.0
+        version: 1.14.0(typescript@4.9.5)(webpack@5.89.0)
+      '@types/jest':
+        specifier: ^27.0.1
+        version: 27.5.2
+      '@types/node':
+        specifier: ^18.18.5
+        version: 18.18.9
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^5.4.0
+        version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.53.0)(typescript@4.9.5)
+      '@typescript-eslint/parser':
+        specifier: ^5.4.0
+        version: 5.62.0(eslint@8.53.0)(typescript@4.9.5)
+      '@vue/babel-plugin-jsx':
+        specifier: ^1.1.5
+        version: 1.1.5(@babel/core@7.23.3)
+      '@vue/cli-plugin-babel':
+        specifier: ~5.0.0
+        version: 5.0.8(@vue/cli-service@5.0.8)(core-js@3.33.2)(vue@3.3.8)
+      '@vue/cli-plugin-e2e-cypress':
+        specifier: ~5.0.0
+        version: 5.0.8(@vue/cli-service@5.0.8)(cypress@9.7.0)(eslint@8.53.0)
+      '@vue/cli-plugin-eslint':
+        specifier: 5.0.8
+        version: 5.0.8(@vue/cli-service@5.0.8)(eslint@8.53.0)
+      '@vue/cli-plugin-router':
+        specifier: ~5.0.0
+        version: 5.0.8(@vue/cli-service@5.0.8)
+      '@vue/cli-plugin-typescript':
+        specifier: ~5.0.0
+        version: 5.0.8(@vue/cli-service@5.0.8)(eslint@8.53.0)(typescript@4.9.5)(vue@3.3.8)
+      '@vue/cli-plugin-unit-jest':
+        specifier: ~5.0.0
+        version: 5.0.8(@vue/cli-service@5.0.8)(@vue/vue3-jest@27.0.0)(jest@27.5.1)(ts-jest@27.1.5)
+      '@vue/cli-plugin-vuex':
+        specifier: ~5.0.0
+        version: 5.0.8(@vue/cli-service@5.0.8)
+      '@vue/cli-service':
+        specifier: ~5.0.0
+        version: 5.0.8(lodash@4.17.21)(prettier@3.1.0)(sass-loader@12.6.0)(vue@3.3.8)
+      '@vue/eslint-config-typescript':
+        specifier: 11.0.3
+        version: 11.0.3(eslint-plugin-vue@9.16.0)(eslint@8.53.0)(typescript@4.9.5)
+      '@vue/test-utils':
+        specifier: ^2.0.0-0
+        version: 2.4.1(vue@3.3.8)
+      '@vue/vue3-jest':
+        specifier: ^27.0.0-alpha.1
+        version: 27.0.0(@babel/core@7.23.3)(babel-jest@27.5.1)(jest@27.5.1)(ts-jest@27.1.5)(typescript@4.9.5)(vue@3.3.8)
+      babel-jest:
+        specifier: ^27.0.6
+        version: 27.5.1(@babel/core@7.23.3)
+      cypress:
+        specifier: ^9.7.0
+        version: 9.7.0
+      eslint:
+        specifier: 8.53.0
+        version: 8.53.0
+      eslint-config-prettier:
+        specifier: ^9.0.0
+        version: 9.0.0(eslint@8.53.0)
+      eslint-plugin-import:
+        specifier: 2.29.0
+        version: 2.29.0(@typescript-eslint/parser@5.62.0)(eslint@8.53.0)
+      eslint-plugin-prettier:
+        specifier: ^5.0.1
+        version: 5.0.1(eslint-config-prettier@9.0.0)(eslint@8.53.0)(prettier@3.1.0)
+      eslint-plugin-vue:
+        specifier: 9.16.0
+        version: 9.16.0(eslint@8.53.0)
+      eslint-plugin-vuejs-accessibility:
+        specifier: 1.2.0
+        version: 1.2.0(eslint@8.53.0)
+      jest:
+        specifier: ^27.0.5
+        version: 27.5.1
+      msw:
+        specifier: ^2.0.8
+        version: 2.0.8(typescript@4.9.5)
+      prettier:
+        specifier: ^3.0.3
+        version: 3.1.0
+      sass:
+        specifier: ^1.32.7
+        version: 1.69.5
+      sass-loader:
+        specifier: ^12.0.0
+        version: 12.6.0(sass@1.69.5)(webpack@5.89.0)
+      ts-jest:
+        specifier: ^27.0.4
+        version: 27.1.5(@babel/core@7.23.3)(@types/jest@27.5.2)(babel-jest@27.5.1)(jest@27.5.1)(typescript@4.9.5)
+      webpack:
+        specifier: ^5.89.0
+        version: 5.89.0
+
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:

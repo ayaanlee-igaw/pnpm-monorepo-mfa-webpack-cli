@@ -10,9 +10,7 @@
     "paths": {
       "@/*": [
         "src/*"
-      ],
-      "designSystemComponents/router": ["../../packages/design-system-components/index.d.ts"],
-      "shared/*": ["../../packages/shared/index.d.ts"]
+      ]
     },
     "lib": [
       "esnext",

@@ -1,0 +1,6 @@
+{
+  "name": "shared",
+  "exposes": {
+    "./components": "./src/components/index.ts"
+  }
+}

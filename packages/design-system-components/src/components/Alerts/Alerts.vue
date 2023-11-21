@@ -2,44 +2,41 @@
   <h2>Alert</h2>
 
   <div class="alert-wrap">
-    <Alert :type="AlertType.success">
+    <DfnAlert type="success">
       <template #default>
         <div>slot binding</div>
       </template>
-    </Alert>
-    <Alert
-      :type="AlertType.warning"
+    </DfnAlert>
+    <DfnAlert
+      type="warning"
       title="Warning"
       button-label="Button"
       :handle-button="handleButton"
       description="title, button, center"
       center />
-    <Alert
-      :type="AlertType.warning"
+    <DfnAlert
+      type="warning"
       button-label="Button"
       :handle-button="handleButton"
       description="button and center"
       center />
-    <Alert
-      :type="AlertType.info"
+    <DfnAlert
+      type="info"
       title="Info"
       description="title and center"
       center />
-    <Alert
-      :type="AlertType.danger"
+    <DfnAlert
+      type="danger"
       description="danger"
       center />
-    <Alert
-      :type="AlertType.danger"
+    <DfnAlert
+      type="danger"
       title="danger"
       center />
   </div>
 </template>
 
 <script setup lang="ts">
-  import Alert from "@/components/Alert/Alert.vue";
-  import { AlertType } from "@/components/Alert/alertType";
-
   function handleButton() {
     console.log("button");
   }

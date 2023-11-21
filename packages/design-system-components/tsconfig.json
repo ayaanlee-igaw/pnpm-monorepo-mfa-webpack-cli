@@ -10,7 +10,8 @@
     "paths": {
       "@/*": [
         "src/*"
-      ]
+      ],
+      "shared/*": ["../../packages/shared/index.d.ts"]
     },
     "lib": [
       "esnext",
