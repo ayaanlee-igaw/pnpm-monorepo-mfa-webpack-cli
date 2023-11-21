@@ -10,7 +10,8 @@
     "lint:fix": "vue-cli-service lint --fix",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "make-types": "make-federated-types -o ."
+    "make-types": "make-federated-types -o .",
+    "lint:css": "stylelint --ignore-path .gitignore **/*.scss"
   },
   "dependencies": {
     "axios": "^1.6.2",
