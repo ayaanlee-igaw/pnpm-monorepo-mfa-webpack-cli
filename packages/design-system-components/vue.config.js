@@ -1,5 +1,7 @@
 const { defineConfig } = require("@vue/cli-service");
 const { ModuleFederationPlugin } = require("webpack").container;
+const sharedPackage = require("../shared/package.json");
+const projectPackage = require("./package.json");
 
 module.exports = defineConfig({
   publicPath: process.env.VUE_APP_SELF_SERVE ? "/" : "auto",
@@ -32,9 +34,9 @@ module.exports = defineConfig({
     plugins: [
       new ModuleFederationPlugin({
         name: "designSystemComponents",
-        filename: "remoteEntry.js",
+        filename: `design-system-components-v${projectPackage.version}.js`,
         remotes: {
-          shared: "shared@http://localhost:8083/remoteEntry.js",
+          shared: `shared@http://localhost:8083/shared-v${sharedPackage.version}.js`,
         },
         exposes: {
           "./router": "./src/router/index.ts",
