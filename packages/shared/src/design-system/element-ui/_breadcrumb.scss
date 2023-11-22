@@ -1,0 +1,30 @@
+.el-breadcrumb {
+  .el-breadcrumb__item {
+    .el-breadcrumb__inner {
+      color: var(--comp-breadcrumb-color-sub-title);
+      font: var(--comp-breadcrumb-typography-sub-title);
+
+      // link(to path)
+      &.is-link {
+        color: var(--comp-breadcrumb-color-main-title);
+        font: var(--comp-breadcrumb-typography-main-title);
+
+        &:hover {
+          color: var(--comp-breadcrumb-color-main-title-hover);
+        }
+      }
+
+      // link(a tag)
+      a:hover {
+        color: var(--comp-breadcrumb-color-main-title-hover);
+      }
+    }
+
+    // breadcrumb separator
+    .el-breadcrumb__separator {
+      margin: 0 var(--comp-breadcrumb-spacing-horizontal-basic);
+      color: var(--comp-breadcrumb-color-separator);
+      font: var(--comp-breadcrumb-typography-sub-title);
+    }
+  }
+}

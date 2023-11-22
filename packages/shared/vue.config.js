@@ -35,6 +35,7 @@ module.exports = defineConfig({
         filename: "remoteEntry.js",
         exposes: {
           "./components": "./src/components/index.ts",
+          "./design-system": "./src/design-system/styles.scss",
         },
         shared: {
           vue: {

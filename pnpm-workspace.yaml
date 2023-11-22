@@ -1,5 +1,4 @@
 packages:
   - 'packages/main'
   - 'packages/design-system-components'
-  - 'packages/design-system'
   - 'packages/shared'
