@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
     width: var(--comp-upload-sizing-card-drag-file-width);
     height: var(--comp-upload-sizing-card-drag-file-height);
+    padding: 0;
     border: var(--comp-upload-border-drag-file);
     border-radius: var(--comp-upload-border-radius-drag-file);
 
@@ -16,8 +16,8 @@
     }
 
     .el-upload__text {
-      font: var(--comp-upload-typography-drag-file-text);
       color: var(--comp-upload-color-drag-file-text);
+      font: var(--comp-upload-typography-drag-file-text);
     }
 
     .el-icon {
@@ -29,8 +29,8 @@
     .upload-wrap {
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: var(--comp-upload-spacing-gap-drag-file-contents);
+      align-items: center;
     }
 
     .upload-img {
@@ -55,8 +55,8 @@
 // upload tip
 .el-upload__tip {
   margin-top: var(--comp-upload-spacing-gap-file);
-  font: var(--comp-upload-typography-file-subtext);
   color: var(--comp-upload-color-file-subtext);
+  font: var(--comp-upload-typography-file-subtext);
 }
 
 // upload list
@@ -96,8 +96,8 @@
     .el-upload-list__item-status-label {
       .el-icon--upload-success {
         width: var(--comp-upload-sizing-file-list-icon);
-        font-size: var(--comp-upload-sizing-file-list-icon);
         color: var(--comp-upload-color-list-icon-success);
+        font-size: var(--comp-upload-sizing-file-list-icon);
       }
     }
   }
@@ -120,8 +120,8 @@
     }
 
     .el-icon {
-      font-size: var(--comp-upload-sizing-card-drag-file-icon);
       color: var(--comp-upload-color-drag-file-icon);
+      font-size: var(--comp-upload-sizing-card-drag-file-icon);
     }
   }
 }

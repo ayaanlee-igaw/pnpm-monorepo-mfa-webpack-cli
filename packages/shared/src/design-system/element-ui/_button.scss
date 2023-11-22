@@ -1,7 +1,7 @@
 // default and round size mixin
 @mixin button-sizing($padding, $height, $font, $image) {
-  padding: 0 $padding;
   height: $height;
+  padding: 0 $padding;
 
   &, * {
     font: $font;
@@ -14,9 +14,9 @@
 
 // square and circle size mixin
 @mixin button-custom-sizing($sizing, $font, $image) {
-  padding: 0;
   width: $sizing;
   height: $sizing;
+  padding: 0;
 
   &, * {
     font: $font;
@@ -68,14 +68,8 @@
 
 .el-button {
   // default
-  transition: var(--custom-comp-button-transition-ease-2);
   border-radius: var(--comp-button-border-radius-default);
-
-  // custom calss
-  // full
-  &.is-full {
-    width: var(--comp-button-sizing-width-100per);
-  }
+  transition: var(--custom-comp-button-transition-ease-2);
 
   // default and round size
   @include button-sizing(
@@ -84,6 +78,12 @@
   var(--comp-button-typography-large),
   var(--comp-button-sizing-icon-large)
   );
+
+  // custom calss
+  // full
+  &.is-full {
+    width: var(--comp-button-sizing-width-100per);
+  }
 
   &.is-round {
     padding: 0 var(--comp-button-spacing-horizontal-large);

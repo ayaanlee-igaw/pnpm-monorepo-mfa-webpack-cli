@@ -1,7 +1,7 @@
 // tag sizing mixin
 @mixin tag-sizing($padding, $height, $font) {
-  padding: 0 $padding;
   height: $height;
+  padding: 0 $padding;
   font: $font;
 }
 
@@ -22,8 +22,8 @@
 
 .el-tag {
   display: inline-flex;
-  align-items: center;
   gap: var(--comp-tag-spacing-gap);
+  align-items: center;
   border-radius: var(--comp-tag-border-radius-default);
 
   // close icon position

@@ -14,16 +14,16 @@
     // prefix
     .el-input__prefix {
       .el-input__prefix-inner > .el-input__icon {
-        font-size: $icon-sizing;
         width: $icon-sizing;
+        font-size: $icon-sizing;
       }
     }
 
     // suffix
     .el-input__suffix {
       .el-input__suffix-inner > .el-input__icon {
-        font-size: $icon-sizing;
         width: $icon-sizing;
+        font-size: $icon-sizing;
       }
     }
   }
@@ -95,16 +95,16 @@
   // disabled
   &.is-disabled {
     .el-textarea__inner {
-      opacity: var(--comp-input-opacity-disabled);
       background-color: var(--comp-input-color-background-disabled);
       box-shadow: none;
+      opacity: var(--comp-input-opacity-disabled);
     }
   }
 
   // count
   .el-input__count {
-    font: var(--comp-input-typography-sub-text);
     color: var(--comp-input-color-text-sub);
+    font: var(--comp-input-typography-sub-text);
   }
 
   // sizing
@@ -125,21 +125,9 @@
 
 // input
 .el-input {
-  // default setting
   .el-input__wrapper {
+    // default padding
     padding: 0 var(--comp-input-spacing-horizontal);
-    background-color: var(--comp-input-color-background);
-    border: var(--comp-input-border-default);
-    border-radius: var(--comp-input-border-radius-default);
-    box-shadow: none;
-
-    .el-input__inner {
-      color: var(--comp-input-color-text-active);
-
-      &::placeholder {
-        color: var(--comp-input-color-text-placeholder);
-      }
-    }
 
     // prefix margin
     .el-input__prefix {
@@ -158,8 +146,24 @@
     // count
     .el-input__count {
       .el-input__count-inner {
-        font: var(--comp-input-typography-sub-text);
         color: var(--comp-input-color-text-sub);
+        font: var(--comp-input-typography-sub-text);
+      }
+    }
+  }
+
+  // default setting
+  .el-input__wrapper {
+    background-color: var(--comp-input-color-background);
+    border: var(--comp-input-border-default);
+    border-radius: var(--comp-input-border-radius-default);
+    box-shadow: none;
+
+    .el-input__inner {
+      color: var(--comp-input-color-text-active);
+
+      &::placeholder {
+        color: var(--comp-input-color-text-placeholder);
       }
     }
   }
@@ -181,10 +185,10 @@
   // disabled
   &.is-disabled {
     .el-input__wrapper {
-      opacity: var(--comp-input-opacity-disabled);
       background-color: var(--comp-input-color-background-disabled);
       border: var(--comp-input-border-default);
       box-shadow: none;
+      opacity: var(--comp-input-opacity-disabled);
     }
   }
 
@@ -259,8 +263,10 @@
         border-radius: 0;
       }
     }
+  }
 
-    // input group Button
+  // input group Button
+  &.el-input-group {
     .el-input-group__prepend,
     .el-input-group__append {
       padding: 0 var(--comp-input-spacing-slot-plaintext-horizontal);
@@ -270,8 +276,8 @@
       // box-shadow: none;
       .el-button {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         width: 100%;
         height: 100%;
 
@@ -292,8 +298,8 @@
         .el-select {
           $input-select-margin-side: calc(var(--comp-input-spacing-slot-plaintext-horizontal) * -1);
 
-          margin-left: $input-select-margin-side;
           margin-right: $input-select-margin-side;
+          margin-left: $input-select-margin-side;
           background-color: var(--comp-input-color-background);
 
           .el-input {

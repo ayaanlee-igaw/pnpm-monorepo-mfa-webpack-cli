@@ -38,8 +38,8 @@
     }
 
     .el-progress__text {
-      font: var(--comp-progress-typography-percent);
       color: var(--comp-progress-color-text);
+      font: var(--comp-progress-typography-percent);
     }
   }
 
@@ -51,8 +51,8 @@
 
         .el-progress-bar__inner {
           .el-progress-bar__innerText {
-            font: var(--comp-progress-typography-percent);
             color: var(--comp-progress-color-text-inverse);
+            font: var(--comp-progress-typography-percent);
           }
         }
       }

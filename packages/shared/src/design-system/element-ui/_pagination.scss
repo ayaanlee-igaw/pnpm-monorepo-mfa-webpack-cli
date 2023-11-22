@@ -5,11 +5,11 @@
     .number,
     .more {
       display: inline-flex;
-      justify-content: center;
       align-items: center;
-      padding: 0 $pager-padding;
-      margin: 0;
+      justify-content: center;
       height: $height;
+      margin: 0;
+      padding: 0 $pager-padding;
     }
   }
 
@@ -17,11 +17,11 @@
   .btn-prev,
   .btn-next {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 $btn-padding;
-    margin: 0;
+    justify-content: center;
     height: $height;
+    margin: 0;
+    padding: 0 $btn-padding;
     font-size: $btn-icon-size;
 
     i, img {
@@ -71,8 +71,8 @@
 
       // pagination number active
       &.is-active {
-        font: $active-font;
         color: $active-color;
+        font: $active-font;
       }
     }
   }
@@ -154,14 +154,14 @@
   // total
   .el-pagination__total {
     margin-right: var(--comp-pagination-spacing-more-gap);
-    font: var(--comp-pagination-typography-text);
     color: var(--comp-pagination-color-more-text);
+    font: var(--comp-pagination-typography-text);
   }
 
   .el-pagination__sizes {
     margin-right: var(--comp-pagination-spacing-more-gap);
-    font: var(--comp-select-typography-mini);
     color: var(--comp-select-color-text-active);
+    font: var(--comp-select-typography-mini);
 
     .el-input--suffix {
       margin: 0 var(--comp-pagination-spacing-more-gap) 0 0;
@@ -170,12 +170,12 @@
 
   .el-pagination__jump {
     margin-left: var(--comp-pagination-spacing-more-gap);
-    font: var(--comp-pagination-typography-text);
     color: var(--comp-pagination-color-more-text);
+    font: var(--comp-pagination-typography-text);
 
     .el-pagination__editor {
-      padding: 0;
       margin: 0 var(--comp-pagination-spacing-more-gap);
+      padding: 0;
     }
   }
 

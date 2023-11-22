@@ -6,8 +6,9 @@
     "serve": "pnpm --parallel --filter \"./**\" serve",
     "lint": "pnpm --parallel --filter \"./**\" lint",
     "lint:fix": "pnpm --parallel --filter \"./**\" lint:fix",
+    "lint:css": "pnpm --parallel --filter \"./**\" lint:css",
     "main": "pnpm --filter \"@monorepo/main\"",
-    "shared": "pnpm --filter \"@monorepo/design-system\"",
+    "shared": "pnpm --filter \"@monorepo/shared\"",
     "design-system-components": "pnpm --filter \"@monorepo/design-system-components\""
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "stylelint-config-standard-scss": "^11.1.0",
     "stylelint-config-recommended": "^13.0.0",
     "stylelint-order": "^6.0.3",
-    "stylelint-value-no-unknown-custom-properties": "^5.0.0"
+    "stylelint-value-no-unknown-custom-properties": "^5.0.0",
+    "stylelint-config-rational-order": "^0.1.2"
   }
 }

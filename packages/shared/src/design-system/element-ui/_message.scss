@@ -8,28 +8,28 @@
 
 // message
 .el-message {
-  padding: var(--comp-toast-spacing-vertical) var(--comp-toast-spacing-horizontal);
   min-width: var(--comp-toast-sizing-min-width);
+  padding: var(--comp-toast-spacing-vertical) var(--comp-toast-spacing-horizontal);
   background-color: var(--comp-toast-color-background-base);
   border-radius: var(--comp-toast-border-radius-default);
 
   .el-icon {
-    margin: 0;
     width: var(--comp-toast-sizing-icon-prefix-single);
     height: var(--comp-toast-sizing-icon-prefix-single);
+    margin: 0;
     font-size: var(--comp-toast-sizing-icon-prefix-single);
 
     &.el-message__closeBtn {
       margin: 0;
-      font-size: var(--comp-toast-sizing-icon-close);
       color: var(--comp-toast-color-icon-close);
+      font-size: var(--comp-toast-sizing-icon-close);
     }
   }
 
   .el-message__content {
     padding-left: var(--comp-toast-spacing-gap);
-    font: var(--comp-toast-typography-content-text);
     color: var(--comp-toast-color-text-base);
+    font: var(--comp-toast-typography-content-text);
   }
 
   // message color

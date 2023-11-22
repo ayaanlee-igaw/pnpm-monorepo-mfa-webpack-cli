@@ -11,15 +11,16 @@
 
   // header
   .el-dialog__header {
+    color: var(--comp-dialog-color-text-base);
+
     // margin: 0;
     font: var(--comp-dialog-typography-title);
-    color: var(--comp-dialog-color-text-base);
     background-color: var(--comp-dialog-color-background-default);
     border-radius: var(--comp-dialog-border-radius-default) var(--comp-dialog-border-radius-default) 0 0;
 
     .el-dialog__title {
-      font: var(--comp-dialog-typography-title);
       color: var(--comp-dialog-color-text-base);
+      font: var(--comp-dialog-typography-title);
     }
 
     .el-dialog__headerbtn {
@@ -28,8 +29,8 @@
       width: var(--comp-dialog-sizing-title-icon-close);
 
       .el-dialog__close {
-        font-size: var(--comp-dialog-sizing-title-icon-close);
         color: var(--comp-dialog-color-text-base);
+        font-size: var(--comp-dialog-sizing-title-icon-close);
       }
     }
   }

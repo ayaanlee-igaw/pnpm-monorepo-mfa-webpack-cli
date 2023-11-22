@@ -1,7 +1,7 @@
 // radio bordered sizing mixin
 @mixin radio-bordered-sizing($height, $font) {
-  padding: 0 var(--comp-radio-spacing-button-horizontal);
   height: $height;
+  padding: 0 var(--comp-radio-spacing-button-horizontal);
 
   .el-radio__label {
     font: $font;
@@ -11,8 +11,8 @@
 // radio Button sizing mixin
 @mixin radio-button-sizing($font, $height) {
   .el-radio-button__inner {
-    font: $font;
     height: $height;
+    font: $font;
   }
 }
 
@@ -42,8 +42,8 @@
 
     .el-radio__label {
       padding-left: var(--comp-radio-spacing-radio-right);
-      font: var(--comp-radio-typography-text-large);
       color: var(--comp-radio-color-text-base);
+      font: var(--comp-radio-typography-text-large);
     }
   }
 

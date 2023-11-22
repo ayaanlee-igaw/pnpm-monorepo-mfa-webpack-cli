@@ -11,13 +11,13 @@
 
   // header
   .el-message-box__header {
-    font: var(--comp-dialog-typography-title);
     color: var(--comp-dialog-color-text-base);
+    font: var(--comp-dialog-typography-title);
     background-color: var(--comp-dialog-color-background-default);
 
     .el-message-box__title {
-      font: var(--comp-dialog-typography-title);
       color: var(--comp-dialog-color-text-base);
+      font: var(--comp-dialog-typography-title);
     }
 
     .el-message-box__headerbtn {
@@ -26,8 +26,8 @@
       width: var(--comp-dialog-sizing-title-icon-close);
 
       .el-message-box__close {
-        font-size: var(--comp-dialog-sizing-title-icon-close);
         color: var(--comp-dialog-color-text-base);
+        font-size: var(--comp-dialog-sizing-title-icon-close);
       }
     }
   }

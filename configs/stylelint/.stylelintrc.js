@@ -1,6 +1,10 @@
 module.exports = {
   extends: ["stylelint-config-standard-scss"],
-  plugins: ["stylelint-value-no-unknown-custom-properties"],
+  plugins: [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin",
+    "stylelint-value-no-unknown-custom-properties",
+  ],
   rules: {
     "no-descending-specificity": null,
     "no-duplicate-selectors": null,
@@ -13,6 +17,23 @@ module.exports = {
     "no-invalid-position-at-import-rule": null,
     // "Expected class selector ~~~ to be kebab-case" 규칙을 무시
     "selector-class-pattern": null,
+
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "at-rules", // <-- important, `@media` should go before `&:pseudo`
+      // "rules",
+    ],
+    "order/properties-alphabetical-order": null,
+    "order/properties-order": [],
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": false,
+      },
+    ],
 
     // stylelint-value-no-unknown-custom-properties 플러그인 설정
     "csstools/value-no-unknown-custom-properties": [

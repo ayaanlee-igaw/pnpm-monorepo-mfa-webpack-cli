@@ -24,8 +24,8 @@
             font-size: $suffix-size;
 
             &::before {
-              font-size: $suffix-size;
               width: $suffix-size;
+              font-size: $suffix-size;
             }
           }
         }
@@ -214,8 +214,8 @@
             display: flex;
             align-items: center;
             padding: var(--comp-scroll-item-spacing-item-vertical) $padding-right-with-check-icon var(--comp-scroll-item-spacing-item-vertical) var(--comp-scroll-item-spacing-item-horizontal);
-            font: var(--comp-scroll-item-typography-item-text);
             color: var(--comp-scroll-item-color-item-text);
+            font: var(--comp-scroll-item-typography-item-text);
             background-color: var(--comp-scroll-item-color-item-background);
 
             // dropdown item check ui
@@ -227,8 +227,8 @@
             // dropdown item selected
             &.selected {
               span {
-                font: var(--comp-scroll-item-typography-item-text-selected);
                 color: var(--comp-scroll-item-color-item-text-selected);
+                font: var(--comp-scroll-item-typography-item-text-selected);
               }
             }
 
@@ -246,15 +246,15 @@
           // dropdown group
           .el-select-group__wrap {
             &::after {
-              left: var(--comp-scroll-item-spacing-item-horizontal);
               right: var(--comp-scroll-item-spacing-item-horizontal);
+              left: var(--comp-scroll-item-spacing-item-horizontal);
               background-color: var(--comp-border-color-divider);
             }
 
             .el-select-group__title {
               padding: var(--comp-scroll-item-spacing-item-vertical) var(--comp-scroll-item-spacing-item-horizontal);
-              font: var(--comp-scroll-item-typography-item-title);
               color: var(--comp-scroll-item-color-item-text-title);
+              font: var(--comp-scroll-item-typography-item-title);
               background-color: var(--comp-scroll-item-color-item-background);
             }
           }

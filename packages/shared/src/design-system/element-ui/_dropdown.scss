@@ -15,10 +15,10 @@
 
       &, &.is-disabled {
         &::before {
-          opacity: 1;
           top: 20%;
           bottom: 20%;
           background-color: var(--comp-dropdown-color-button-divider);
+          opacity: 1;
         }
       }
 
@@ -53,6 +53,10 @@
             // dropdown item
             .el-dropdown-menu__item {
               padding: var(--comp-scroll-item-spacing-item-vertical) var(--comp-scroll-item-spacing-item-horizontal);
+              color: var(--comp-scroll-item-color-item-text);
+
+              // dropdown item font
+              font: var(--comp-scroll-item-typography-item-text);
               background-color: var(--comp-scroll-item-color-item-background);
 
               &.is--active {
@@ -60,18 +64,14 @@
               }
 
               &.is-disabled {
-                opacity: var(--comp-scroll-item-opacity-item-disabled);
                 cursor: not-allowed;
+                opacity: var(--comp-scroll-item-opacity-item-disabled);
               }
 
               // dropdown item hover
               &:hover {
                 background-color: var(--comp-scroll-item-color-item-background-hover);
               }
-
-              // dropdown item font
-              font: var(--comp-scroll-item-typography-item-text);
-              color: var(--comp-scroll-item-color-item-text);
             }
           }
         }
