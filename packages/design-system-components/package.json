@@ -7,10 +7,10 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lint:fix": "vue-cli-service lint --fix",
+    "lint:css": "stylelint --ignore-path .gitignore **/*.scss",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "make-types": "make-federated-types -o .",
-    "lint:css": "stylelint --ignore-path .gitignore **/*.scss"
+    "make-types": "make-federated-types -o ."
   },
   "dependencies": {
     "axios": "^1.6.2",

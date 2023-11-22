@@ -14,6 +14,8 @@ $index-skip: 16777271;
 @mixin layer-index($layer: 'default', $index: 0) {
   $default-index: $index-default;
 
+  z-index: $default-index + $index !important;
+
   @if ($index < 0) or ($index > 99999) {
     @error '$index should be 0 to 99999';
   }
@@ -39,8 +41,6 @@ $index-skip: 16777271;
     $default-index: $index-skip;
     $index: 0;
   }
-
-  z-index: $default-index + $index !important;
 }
 
 

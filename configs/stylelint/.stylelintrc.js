@@ -37,7 +37,7 @@ module.exports = {
 
     // stylelint-value-no-unknown-custom-properties 플러그인 설정
     "csstools/value-no-unknown-custom-properties": [
-      false,
+      null,
       // {
       //   importFrom: [
       //     "./src/design-system/design-tokens/design-token-css/_spacing.scss",
