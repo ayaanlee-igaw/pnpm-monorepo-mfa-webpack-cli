@@ -23,6 +23,7 @@
     margin: 0;
     height: $height;
     font-size: $btn-icon-size;
+
     i, img {
       width: $btn-icon-size;
     }
@@ -54,7 +55,7 @@
       color: $color;
 
       // pagination number, quicknext Button hover
-      &:not(.is-disabled):not(.is-active):hover {
+      &:not(.is-disabled, .is-active):hover {
         color: $hover-color;
       }
 
@@ -67,6 +68,7 @@
     // pagination number
     .number {
       font: $font;
+
       // pagination number active
       &.is-active {
         font: $active-font;
@@ -79,6 +81,7 @@
 // pagination background setting mixin
 @mixin pagination-background-setting($font, $active-font, $color, $active-color, $hover-color, $bg, $active-bg, $border-radius) {
   @include pagination-setting($font, $active-font, $color, $active-color, $hover-color);
+
   .btn-prev,
   .btn-next {
     background-color: $bg;
@@ -92,6 +95,7 @@
       background-color: $bg;
       border-radius: $border-radius;
     }
+
     .number {
       // pagination number active
       &.is-active,
@@ -108,9 +112,11 @@
   .btn-prev {
     margin-right: $gap;
   }
+
   .btn-next {
     margin-left: $gap;
   }
+
   .el-pager {
     display: inline-flex;
     gap: $gap;
@@ -126,6 +132,7 @@
   var(--comp-pagination-spacing-basic-horizontal-icon),
   var(--comp-pagination-sizing-basic-icon)
   );
+
   &.el-pagination--small {
     @include pagination-sizing(
     var(--comp-pagination-sizing-basic-height-small),
@@ -150,18 +157,22 @@
     font: var(--comp-pagination-typography-text);
     color: var(--comp-pagination-color-more-text);
   }
+
   .el-pagination__sizes {
     margin-right: var(--comp-pagination-spacing-more-gap);
     font: var(--comp-select-typography-mini);
     color: var(--comp-select-color-text-active);
+
     .el-input--suffix {
       margin: 0 var(--comp-pagination-spacing-more-gap) 0 0;
     }
   }
+
   .el-pagination__jump {
     margin-left: var(--comp-pagination-spacing-more-gap);
     font: var(--comp-pagination-typography-text);
     color: var(--comp-pagination-color-more-text);
+
     .el-pagination__editor {
       padding: 0;
       margin: 0 var(--comp-pagination-spacing-more-gap);
@@ -177,6 +188,7 @@
     var(--comp-pagination-spacing-basic-horizontal-icon),
     var(--comp-pagination-sizing-basic-icon)
     );
+
     &.el-pagination--small {
       @include pagination-sizing(
       var(--comp-pagination-sizing-basic-height-small),
@@ -188,6 +200,7 @@
 
     // background type gap
     @include pagination-background-gap(var(--comp-pagination-spacing-basic-gap));
+
     &.el-pagination--small {
       @include pagination-background-gap(var(--comp-pagination-spacing-basic-gap-small));
     }
@@ -216,6 +229,7 @@
       var(--comp-select-typography-medium),
       var(--comp-select-sizing-icon-medium)
       );
+
       &.el-select--small {
         @include select-sizing(
         var(--comp-select-sizing-height-mini),
@@ -224,6 +238,7 @@
         );
       }
     }
+
     .el-input {
       @include input-sizing(
       var(--comp-input-sizing-height-medium),
@@ -231,6 +246,7 @@
       var(--comp-input-sizing-icon-medium),
       var(--comp-input-spacing-slot-button-horizontal-medium)
       );
+
       &.el-input--small {
         @include input-sizing(
         var(--comp-input-sizing-height-mini),

@@ -3,6 +3,7 @@
   height: $height;
   font: $font;
   border-radius: var(--comp-checkbox-border-radius-button);
+
   &.is-disabled {
     font: $font;
   }
@@ -21,6 +22,7 @@
       border-radius: var(--comp-checkbox-border-radius-button);
     }
   }
+
   .el-checkbox__label {
     font: var(--comp-checkbox-typography-text-medium);
     color: var(--comp-checkbox-color-text);
@@ -34,9 +36,10 @@
         border: var(--comp-checkbox-border-selected);
       }
     }
+
     &.is-disabled .el-checkbox__label,
     .el-checkbox__label {
-      //font: var(--comp-checkbox-typography-text-medium-selected);
+      // font: var(--comp-checkbox-typography-text-medium-selected);
       color: var(--comp-checkbox-color-text-selected);
     }
   }
@@ -62,6 +65,7 @@
       .el-checkbox__inner {
         width: var(--comp-checkbox-sizing-medium);
         height: var(--comp-checkbox-sizing-medium);
+
         &::after {
           left: 5px;
           width: 3px;
@@ -90,18 +94,21 @@
       var(--comp-checkbox-typography-text-large)
       );
     }
+
     &.el-checkbox--medium {
       @include checkbox-bordered-sizing(
       var(--comp-checkbox-sizing-button-height-medium),
       var(--comp-checkbox-typography-text-medium)
       );
     }
+
     &.el-checkbox--small {
       @include checkbox-bordered-sizing(
       var(--comp-checkbox-sizing-button-height-small),
       var(--comp-checkbox-typography-text-small)
       );
     }
+
     &.el-checkbox--mini {
       @include checkbox-bordered-sizing(
       var(--comp-checkbox-sizing-button-height-mini),

@@ -26,10 +26,12 @@
         }
       }
     }
+
     .el-input__wrapper {
       .el-input__suffix {
         .el-input__suffix-inner {
           color: var(--comp-select-color-icon-helper);
+
           .el-icon {
             margin-left: var(--comp-select-spacing-gap);
           }
@@ -46,6 +48,7 @@
     var(--comp-select-sizing-icon-large)
     );
   }
+
   &.el-cascader--medium {
     @include select-sizing(
     var(--comp-select-sizing-height-medium),
@@ -53,6 +56,7 @@
     var(--comp-select-sizing-icon-medium)
     );
   }
+
   &.el-cascader--small {
     @include select-sizing(
     var(--comp-select-sizing-height-small),
@@ -60,6 +64,7 @@
     var(--comp-select-sizing-icon-small)
     );
   }
+
   &.el-cascader--mini {
     @include select-sizing(
     var(--comp-select-sizing-height-mini),
@@ -80,6 +85,7 @@
       }
     }
   }
+
   &.el-cascader--medium {
     .el-cascader__tags {
       .el-tag {
@@ -91,6 +97,7 @@
       }
     }
   }
+
   &.el-cascader--small {
     .el-cascader__tags {
       .el-tag {
@@ -102,6 +109,7 @@
       }
     }
   }
+
   &.el-cascader--mini {
     .el-cascader__tags {
       .el-tag {
@@ -115,8 +123,16 @@
   }
 }
 
+// popper
+.el-cascader-menus.el-popper{
+  @include layer-index('toast', 10);
+}
+
 // cascader dropdown
 .el-cascader__dropdown {
+  // dropdown
+  @include layer-index('popover');
+
   background-color: var(--comp-cascader-color-popper-background);
   border: var(--comp-cascader-border-popper-outline);
   border-radius: var(--comp-cascader-border-radius-popper-default);
@@ -132,6 +148,7 @@
       .el-cascader-menu__wrap {
         .el-cascader-menu__list {
           padding: var(--comp-cascader-spacing-popper-vertical-list) 0;
+
           .el-cascader-node {
             display: flex;
             gap: var(--comp-cascader-spacing-list-gap);
@@ -143,13 +160,14 @@
             .el-cascader-node__label {
               padding: 0;
             }
+
             .el-checkbox {
               margin: 0;
             }
 
             // cascader prefix
             .el-cascader-node__prefix {
-              //left: 6px;
+              // left: 6px;
               left: unset;
               right: var(--comp-cascader-spacing-list-horizontal);
             }
@@ -182,13 +200,4 @@
       }
     }
   }
-}
-
-// dropdown
-.el-cascader__dropdown {
-  @include layer-index('popover');
-}
-// popper
-.el-cascader-menus.el-popper{
-  @include layer-index('toast', 10);
 }

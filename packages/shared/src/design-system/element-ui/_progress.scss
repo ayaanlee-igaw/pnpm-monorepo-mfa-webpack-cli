@@ -20,6 +20,7 @@
       }
     }
   }
+
   .el-progress__text {
     color: $stroke;
   }
@@ -35,6 +36,7 @@
         background-color: var(--comp-progress-color-background);
       }
     }
+
     .el-progress__text {
       font: var(--comp-progress-typography-percent);
       color: var(--comp-progress-color-text);
@@ -46,6 +48,7 @@
     .el-progress-bar {
       .el-progress-bar__outer {
         height: var(--comp-progress-sizing-height-internal) !important;
+
         .el-progress-bar__inner {
           .el-progress-bar__innerText {
             font: var(--comp-progress-typography-percent);
@@ -60,6 +63,7 @@
   .el-progress-bar {
     .el-progress-bar__outer {
       border-radius: 0 var(--comp-progress-border-radius-bar-end) var(--comp-progress-border-radius-bar-end) 0;
+
       .el-progress-bar__inner {
         border-radius: 0 var(--comp-progress-border-radius-bar-end) var(--comp-progress-border-radius-bar-end) 0;
       }
@@ -68,12 +72,15 @@
 
   // bar color
   @include bar-color(var(--comp-progress-color-background-bar-blue));
+
   &.is-success {
     @include bar-color(var(--comp-progress-color-background-bar-green));
   }
+
   &.is-warning {
     @include bar-color(var(--comp-progress-color-background-bar-orange));
   }
+
   &.is-exception {
     @include bar-color(var(--comp-progress-color-background-bar-red));
   }
@@ -92,12 +99,15 @@
 
     // circle color
     @include circle-color(var(--comp-progress-color-background-bar-blue));
+
     &.is-success {
       @include circle-color(var(--comp-progress-color-background-bar-green));
     }
+
     &.is-warning {
       @include circle-color(var(--comp-progress-color-background-bar-orange));
     }
+
     &.is-exception {
       @include circle-color(var(--comp-progress-color-background-bar-red));
     }

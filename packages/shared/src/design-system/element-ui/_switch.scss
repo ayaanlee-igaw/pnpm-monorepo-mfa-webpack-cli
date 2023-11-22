@@ -1,6 +1,7 @@
 .el-switch {
   width: var(--comp-switch-sizing-width);
   height: var(--comp-switch-sizing-height);
+
   .el-switch__core {
     width: var(--comp-switch-sizing-width);
     height: var(--comp-switch-sizing-height);
@@ -19,12 +20,14 @@
 
   // checked
   &.is-checked {
-    $switch-circle--checked-position: calc(100% - 22px);
+    $switch-circle-checked-position: calc(100% - 22px);
+
     .el-switch__core {
       background-color: var(--comp-switch-color-background-on);
       border: none;
+
       .el-switch__action {
-        left: $switch-circle--checked-position;
+        left: $switch-circle-checked-position;
       }
     }
   }

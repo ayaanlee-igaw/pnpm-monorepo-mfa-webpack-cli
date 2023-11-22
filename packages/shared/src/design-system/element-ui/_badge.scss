@@ -14,26 +14,30 @@
     }
 
     // fixed
-    //&.is-fixed {
+    // &.is-fixed {
     //  right: 10px;
-    //}
-    //&.is-fixed.is-dot {
+    // }
+    // &.is-fixed.is-dot {
     //  right: 6px;
-    //}
+    // }
 
     // badge color
     &.el-badge__content--primary {
       background-color: var(--comp-badge-color-primary);
     }
+
     &.el-badge__content--success {
       background-color: var(--comp-badge-color-green);
     }
+
     &.el-badge__content--info {
       background-color: var(--comp-badge-color-mute);
     }
+
     &.el-badge__content--warning {
       background-color: var(--comp-badge-color-yellow);
     }
+
     &, &.el-badge__content--error {
       background-color: var(--comp-badge-color-red);
     }

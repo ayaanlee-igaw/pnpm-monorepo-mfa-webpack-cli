@@ -12,6 +12,7 @@
     // split button middle line
     .el-button {
       margin: 0;
+
       &, &.is-disabled {
         &::before {
           opacity: 1;
@@ -20,10 +21,12 @@
           background-color: var(--comp-dropdown-color-button-divider);
         }
       }
+
       &, &:hover {
         &:first-child {
           border-right: none;
         }
+
         &:last-child {
           border-left: none;
         }

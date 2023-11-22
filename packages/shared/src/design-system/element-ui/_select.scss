@@ -4,11 +4,13 @@
     .el-input__wrapper {
       height: auto;
       min-height: $height;
+
       .el-input__inner {
         // mini size가 정상적으로 출력될 수 있도록 추가
         // -> @todo el-input group의 select가 깨짐. 추후 해결.
-        //height: $height;
+        // height: $height;
         font: $font;
+
         &::placeholder {
           font: $font;
         }
@@ -20,6 +22,7 @@
         .el-input__suffix-inner {
           i {
             font-size: $suffix-size;
+
             &::before {
               font-size: $suffix-size;
               width: $suffix-size;
@@ -54,10 +57,12 @@
         }
       }
     }
+
     .el-input__wrapper {
       .el-input__suffix {
         .el-input__suffix-inner {
           color: var(--comp-select-color-icon-helper);
+
           .el-icon {
             margin-left: var(--comp-select-spacing-gap);
           }
@@ -70,11 +75,12 @@
     // default
     .el-input__wrapper {
       padding: 0 var(--comp-select-spacing-horizontal);
-      //border: var(--comp-select-border-default);
-      //border-radius: var(--comp-select-border-radius-default);
-      //&::placeholder {
+
+      // border: var(--comp-select-border-default);
+      // border-radius: var(--comp-select-border-radius-default);
+      // &::placeholder {
       //  color: var(--comp-select-color-text-placeholder);
-      //}
+      // }
     }
 
     // focus
@@ -84,6 +90,7 @@
         box-shadow: none !important;
       }
     }
+
     .el-input__wrapper.is-focus {
       box-shadow: none !important;
     }
@@ -97,6 +104,7 @@
     var(--comp-select-sizing-icon-large)
     );
   }
+
   &.el-select--medium {
     @include select-sizing(
     var(--comp-select-sizing-height-medium),
@@ -104,6 +112,7 @@
     var(--comp-select-sizing-icon-medium)
     );
   }
+
   &.el-select--small {
     @include select-sizing(
     var(--comp-select-sizing-height-small),
@@ -111,6 +120,7 @@
     var(--comp-select-sizing-icon-small)
     );
   }
+
   &.el-select--mini {
     @include select-sizing(
     var(--comp-select-sizing-height-mini),
@@ -123,8 +133,9 @@
   .el-select__tags {
     .el-select-tags-wrapper {
       margin-left: var(--comp-select-spacing-horizontal);
+
       .el-tag {
-        //margin: 0;
+        // margin: 0;
         .el-tag__content {
           display: flex;
           align-items: center;
@@ -132,6 +143,7 @@
       }
     }
   }
+
   // select tag sizing(tag mixin 이용)
   // select 크기에 상관 없이 tag small로 바인딩 되는 문제점 해결
   &, &.el-select--large {
@@ -145,6 +157,7 @@
       }
     }
   }
+
   &.el-select--medium {
     .el-select__tags {
       .el-tag {
@@ -156,6 +169,7 @@
       }
     }
   }
+
   &.el-select--small {
     .el-select__tags {
       .el-tag {
@@ -167,6 +181,7 @@
       }
     }
   }
+
   &.el-select--mini {
     .el-select__tags {
       .el-tag {
@@ -189,10 +204,12 @@
 
   .el-select-dropdown {
     $padding-right-with-check-icon: calc(var(--comp-scroll-item-spacing-item-horizontal) + var(--comp-scroll-item-sizing-item-icon) + var(--comp-scroll-item-spacing-item-gap));
+
     .el-scrollbar {
       .el-select-dropdown__wrap {
         .el-select-dropdown__list {
           padding: var(--comp-scroll-item-spacing-vertical) 0;
+
           .el-select-dropdown__item {
             display: flex;
             align-items: center;
@@ -214,6 +231,7 @@
                 color: var(--comp-scroll-item-color-item-text-selected);
               }
             }
+
             // dropdown item hover
             &:not(.is-disabled):hover {
               background-color: var(--comp-scroll-item-color-item-background-hover);
@@ -232,6 +250,7 @@
               right: var(--comp-scroll-item-spacing-item-horizontal);
               background-color: var(--comp-border-color-divider);
             }
+
             .el-select-group__title {
               padding: var(--comp-scroll-item-spacing-item-vertical) var(--comp-scroll-item-spacing-item-horizontal);
               font: var(--comp-scroll-item-typography-item-title);

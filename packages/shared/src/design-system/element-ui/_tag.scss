@@ -10,8 +10,10 @@
   color: $color;
   background-color: $bg;
   border: $border;
+
   .el-tag__close {
     color: $color;
+
     &:hover {
       background-color: transparent;
     }
@@ -28,13 +30,14 @@
   .el-tag__close {
     position: unset;
     margin: 0;
+
     &::before {
       // element ui에서 사용중인 icon이 작아서, 임의로 사이즈 추가
       font-size: calc(var(--comp-tag-sizing-icon-close) + 4px);
     }
   }
 
-  //tag sizing
+  // tag sizing
   &, &.el-tag--large {
     @include tag-sizing(
     var(--comp-tag-spacing-horizontal-large),
@@ -42,6 +45,7 @@
     var(--comp-tag-typography-text-large)
     );
   }
+
   &.el-tag--medium {
     @include tag-sizing(
     var(--comp-tag-spacing-horizontal-medium),
@@ -49,6 +53,7 @@
     var(--comp-tag-typography-text-medium)
     );
   }
+
   &.el-tag--small {
     @include tag-sizing(
     var(--comp-tag-spacing-horizontal-small),
@@ -56,6 +61,7 @@
     var(--comp-tag-typography-text-small)
     );
   }
+
   &.el-tag--mini {
     @include tag-sizing(
     var(--comp-tag-spacing-horizontal-mini),
@@ -74,6 +80,7 @@
     var(--comp-tag-border-blue-tint)
     );
   }
+
   &.el-tag--success,
   &.el-tag--success.el-tag--light {
     @include tag-color(
@@ -82,6 +89,7 @@
     var(--comp-tag-border-green-tint)
     );
   }
+
   &.el-tag--info,
   &.el-tag--info.el-tag--light {
     @include tag-color(
@@ -90,6 +98,7 @@
     var(--comp-tag-border-grey-tint)
     );
   }
+
   &.el-tag--warning,
   &.el-tag--warning.el-tag--light {
     @include tag-color(
@@ -98,6 +107,7 @@
     var(--comp-tag-border-orange-tint)
     );
   }
+
   &.el-tag--danger,
   &.el-tag--danger.el-tag--light {
     @include tag-color(
@@ -116,6 +126,7 @@
     var(--comp-tag-border-blue-contained)
     );
   }
+
   &.el-tag--success.el-tag--dark {
     @include tag-color(
     var(--comp-tag-color-contained-text-green),
@@ -123,6 +134,7 @@
     var(--comp-tag-border-green-contained)
     );
   }
+
   &.el-tag--info.el-tag--dark {
     @include tag-color(
     var(--comp-tag-color-contained-text-grey),
@@ -130,6 +142,7 @@
     var(--comp-tag-border-grey-contained)
     );
   }
+
   &.el-tag--warning.el-tag--dark {
     @include tag-color(
     var(--comp-tag-color-contained-text-orange),
@@ -137,6 +150,7 @@
     var(--comp-tag-border-orange-contained)
     );
   }
+
   &.el-tag--danger.el-tag--dark {
     @include tag-color(
     var(--comp-tag-color-contained-text-red),
